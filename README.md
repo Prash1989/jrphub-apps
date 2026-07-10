@@ -1,25 +1,17 @@
-# JRP Apps Portal — Phase 2
+# JRP Apps Portal — v3
 
-Official website for JRP Apps.
+Live: https://apps.jrphub.com
 
-Live site: https://apps.jrphub.com
+## v3 fixes and updates
 
-## Phase 2 additions
-
-- Individual product pages
-- App search and category filters
-- Dark/light theme switcher with saved preference
-- Loading animation
-- Product statistics section
-- New favicon and stronger branding
-- Improved responsive behavior
-- Dedicated metadata and feature sections for each app
-
-## Main files
-
-- `index.html`
-- `styles.css`
-- `app.js`
-- `app-page.css`
-- `assets/favicon.svg`
-- `apps/*/index.html`
+- Removed the loading overlay that displayed raw `J / Loading JRP Apps`
+- Replaced the theme button with a clean moon/sun icon
+- Entire app card is clickable
+- JRP Apps logo and name return to the homepage/top
+- Search works by app name and category
+- All, Utilities, Finance and Games filters work
+- Added a proper Games section
+- Added Google Play links for five published apps
+- Removed PMS Web from the public portfolio
+- Added cache-busting query versions to CSS and JavaScript
+- Updated individual app pages with Google Play buttons

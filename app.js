@@ -1,69 +1,110 @@
 
-window.addEventListener('load', () => {
-  setTimeout(() => document.getElementById('loader')?.classList.add('hidden'), 250);
-});
+(function () {
+  "use strict";
 
-const root = document.documentElement;
-const savedTheme = localStorage.getItem('jrp-theme');
-if (savedTheme) root.dataset.theme = savedTheme;
+  var root = document.documentElement;
+  var themeToggle = document.getElementById("themeToggle");
+  var themeIcon = themeToggle ? themeToggle.querySelector(".theme-icon") : null;
+  var menuToggle = document.getElementById("menuToggle");
+  var mainNav = document.getElementById("mainNav");
+  var searchInput = document.getElementById("appSearch");
+  var cards = Array.prototype.slice.call(document.querySelectorAll(".app-card"));
+  var filters = Array.prototype.slice.call(document.querySelectorAll(".filter"));
+  var emptyState = document.getElementById("emptyState");
+  var activeFilter = "all";
 
-const themeToggle = document.querySelector('.theme-toggle');
-const refreshThemeIcon = () => {
-  if (themeToggle) themeToggle.textContent = root.dataset.theme === 'light' ? '☾' : '☼';
-};
-refreshThemeIcon();
-themeToggle?.addEventListener('click', () => {
-  root.dataset.theme = root.dataset.theme === 'light' ? 'dark' : 'light';
-  localStorage.setItem('jrp-theme', root.dataset.theme);
-  refreshThemeIcon();
-});
+  function setTheme(theme) {
+    root.setAttribute("data-theme", theme);
+    try { localStorage.setItem("jrp-theme", theme); } catch (e) {}
+    if (themeIcon) themeIcon.textContent = theme === "light" ? "☀" : "☾";
+  }
 
-const menuButton = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.main-nav');
-menuButton?.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(open));
-});
-document.querySelectorAll('.main-nav a').forEach(link => link.addEventListener('click', () => {
-  nav.classList.remove('open');
-  menuButton?.setAttribute('aria-expanded', 'false');
-}));
+  var savedTheme = "dark";
+  try { savedTheme = localStorage.getItem("jrp-theme") || "dark"; } catch (e) {}
+  setTheme(savedTheme);
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
+  if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+      setTheme(root.getAttribute("data-theme") === "light" ? "dark" : "light");
+    });
+  }
+
+  if (menuToggle && mainNav) {
+    menuToggle.addEventListener("click", function () {
+      var open = mainNav.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll(".main-nav a"), function (link) {
+    link.addEventListener("click", function () {
+      if (mainNav) mainNav.classList.remove("open");
+      if (menuToggle) menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  function applyFilters() {
+    var query = searchInput ? searchInput.value.toLowerCase().trim() : "";
+    var visible = 0;
+
+    cards.forEach(function (card) {
+      var name = card.getAttribute("data-name") || "";
+      var category = card.getAttribute("data-category") || "";
+      var matchesQuery = query === "" || name.indexOf(query) !== -1 || category.indexOf(query) !== -1;
+      var matchesFilter = activeFilter === "all" || category === activeFilter;
+      var show = matchesQuery && matchesFilter;
+      card.hidden = !show;
+      if (show) visible += 1;
+    });
+
+    if (emptyState) emptyState.style.display = visible === 0 ? "block" : "none";
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", applyFilters);
+    searchInput.addEventListener("search", applyFilters);
+  }
+
+  filters.forEach(function (button) {
+    button.addEventListener("click", function () {
+      filters.forEach(function (item) { item.classList.remove("active"); });
+      button.classList.add("active");
+      activeFilter = button.getAttribute("data-filter") || "all";
+      applyFilters();
+    });
+  });
+
+  cards.forEach(function (card) {
+    function openCard(event) {
+      if (event.target.closest("a")) return;
+      var href = card.getAttribute("data-href");
+      if (href) window.location.href = href;
     }
+    card.addEventListener("click", openCard);
+    card.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openCard(event);
+      }
+    });
   });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-const search = document.getElementById('appSearch');
-const filters = document.querySelectorAll('.filter');
-const cards = [...document.querySelectorAll('.app-card')];
-const emptyState = document.getElementById('emptyState');
-let activeFilter = 'all';
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    Array.prototype.forEach.call(document.querySelectorAll(".reveal"), function (el) { observer.observe(el); });
+  } else {
+    Array.prototype.forEach.call(document.querySelectorAll(".reveal"), function (el) { el.classList.add("visible"); });
+  }
 
-function applyFilters() {
-  const query = (search?.value || '').trim().toLowerCase();
-  let visible = 0;
-  cards.forEach(card => {
-    const haystack = `${card.dataset.name} ${card.dataset.category}`;
-    const filterMatch = activeFilter === 'all' || card.dataset.category.includes(activeFilter);
-    const searchMatch = !query || haystack.includes(query);
-    const show = filterMatch && searchMatch;
-    card.style.display = show ? '' : 'none';
-    if (show) visible++;
-  });
-  if (emptyState) emptyState.style.display = visible ? 'none' : 'block';
-}
-search?.addEventListener('input', applyFilters);
-filters.forEach(button => button.addEventListener('click', () => {
-  filters.forEach(item => item.classList.remove('active'));
-  button.classList.add('active');
-  activeFilter = button.dataset.filter;
+  var year = document.getElementById("year");
+  if (year) year.textContent = String(new Date().getFullYear());
+
   applyFilters();
-}));
-
-document.getElementById('year').textContent = new Date().getFullYear();
+})();
