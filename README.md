@@ -1,11 +1,25 @@
-# JRP Apps Portal
+# JRP Apps Portal — Phase 2
 
 Official website for JRP Apps.
 
 Live site: https://apps.jrphub.com
 
-## Files
+## Phase 2 additions
 
-- `index.html` — portal homepage
-- `styles.css` — responsive premium styling
-- `app.js` — navigation and reveal animations
+- Individual product pages
+- App search and category filters
+- Dark/light theme switcher with saved preference
+- Loading animation
+- Product statistics section
+- New favicon and stronger branding
+- Improved responsive behavior
+- Dedicated metadata and feature sections for each app
+
+## Main files
+
+- `index.html`
+- `styles.css`
+- `app.js`
+- `app-page.css`
+- `assets/favicon.svg`
+- `apps/*/index.html`
