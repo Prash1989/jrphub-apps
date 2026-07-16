@@ -156,3 +156,8 @@ button{color:inherit}
 .discover-points p{font-size:14px;margin:0}
 @media(max-width:900px){.discover-grid{grid-template-columns:1fr}.games-summary{grid-template-columns:1fr}}
 @media(max-width:680px){.hero h1{font-size:42px}.section-heading h2,.discover-intro h2{font-size:31px}}
+
+/* Content and accessibility enhancements */
+.feature-icon-grid,.content-card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.feature-icon-grid article,.content-card-grid article,.faq-list details{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:24px}.feature-icon-grid span{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:var(--accent-soft);font-weight:800;margin-bottom:16px}.feature-icon-grid h3,.content-card-grid h3{margin:0 0 10px}.feature-icon-grid p,.content-card-grid p,.faq-list p{color:var(--muted);line-height:1.75}.faq-list{display:grid;gap:14px}.faq-list summary{cursor:pointer;font-weight:700}.faq-list details[open] summary{margin-bottom:12px}@media(max-width:900px){.feature-icon-grid,.content-card-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:620px){.feature-icon-grid,.content-card-grid{grid-template-columns:1fr}}
+
+.last-updated{max-width:1180px;margin:0 auto 18px;padding:0 20px;text-align:center;color:var(--muted);font-size:13px}
