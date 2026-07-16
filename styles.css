@@ -136,3 +136,23 @@ button{color:inherit}
 .privacy-note strong{color:var(--text)}.privacy-note a{color:#b5c1ff;font-weight:700}
 @media(max-width:780px){.privacy-grid{grid-template-columns:1fr}.privacy-card{min-height:0}}
 @media(max-width:520px){.privacy-card{grid-template-columns:auto 1fr;padding:22px;gap:16px}.privacy-card .app-icon{width:54px;height:54px;border-radius:16px;font-size:22px}.privacy-arrow{display:none}.privacy-hero p{font-size:16px}}
+
+
+/* Portfolio organization and search-friendly content */
+.hero h1{font-size:clamp(42px,6vw,72px)}
+.section-heading h2,.discover-intro h2{font-size:clamp(30px,4vw,46px)}
+.games-summary{grid-template-columns:repeat(2,minmax(0,1fr))}
+.games-summary a{grid-template-columns:auto 1fr;padding:22px;align-items:start}
+.games-summary .game-copy{min-width:0}
+.games-summary small{display:block;line-height:1.6;margin-top:6px}
+.games-summary em{display:inline-block;margin-top:12px;color:#aebaff;font-size:11px;font-style:normal;font-weight:800;text-transform:uppercase;letter-spacing:.07em}
+.discover-section{padding-top:80px;padding-bottom:80px}
+.discover-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}
+.discover-intro p,.discover-points p{color:var(--muted);line-height:1.75}
+.discover-intro p{font-size:16px}
+.discover-points{display:grid;gap:16px}
+.discover-points article{padding:22px 24px;border:1px solid var(--line);border-radius:20px;background:var(--surface)}
+.discover-points h3{font-size:19px;margin:0 0 8px}
+.discover-points p{font-size:14px;margin:0}
+@media(max-width:900px){.discover-grid{grid-template-columns:1fr}.games-summary{grid-template-columns:1fr}}
+@media(max-width:680px){.hero h1{font-size:42px}.section-heading h2,.discover-intro h2{font-size:31px}}
