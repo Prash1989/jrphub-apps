@@ -43,6 +43,16 @@
     });
   });
 
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && mainNav && mainNav.classList.contains("open")) {
+      mainNav.classList.remove("open");
+      if (menuToggle) {
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.focus();
+      }
+    }
+  });
+
   function applyFilters() {
     var query = searchInput ? searchInput.value.toLowerCase().trim() : "";
     var visible = 0;
@@ -50,8 +60,9 @@
     cards.forEach(function (card) {
       var name = card.getAttribute("data-name") || "";
       var category = card.getAttribute("data-category") || "";
+      var categoryTokens = category.split(/\s+/);
       var matchesQuery = query === "" || name.indexOf(query) !== -1 || category.indexOf(query) !== -1;
-      var matchesFilter = activeFilter === "all" || category === activeFilter;
+      var matchesFilter = activeFilter === "all" || categoryTokens.indexOf(activeFilter) !== -1;
       var show = matchesQuery && matchesFilter;
       card.hidden = !show;
       if (show) visible += 1;
@@ -67,8 +78,12 @@
 
   filters.forEach(function (button) {
     button.addEventListener("click", function () {
-      filters.forEach(function (item) { item.classList.remove("active"); });
+      filters.forEach(function (item) {
+        item.classList.remove("active");
+        item.setAttribute("aria-pressed", "false");
+      });
       button.classList.add("active");
+      button.setAttribute("aria-pressed", "true");
       activeFilter = button.getAttribute("data-filter") || "all";
       applyFilters();
     });
