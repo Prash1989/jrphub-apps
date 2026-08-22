@@ -6,7 +6,7 @@
   <title>Money Mate Privacy Policy</title>
   <meta
     name="description"
-    content="Read the Money Mate privacy policy, including information about local data storage, backups, exports, permissions, security, and support."
+    content="Read the Money Mate privacy policy, including local financial data storage, optional MoneyMate Account and Firebase sync, Google Drive backups, advertising, imports, permissions, security, and data deletion."
   />
   <link rel="canonical" href="https://apps.jrphub.com/privacy/moneymate.html" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -99,108 +99,226 @@
 
   <main>
     <h1>Money Mate Privacy Policy</h1>
-    <p><strong>Last Updated:</strong> August 3, 2026</p>
+    <p><strong>Last Updated:</strong> August 22, 2026</p>
     <p>Money Mate is developed by <strong>JRP Apps</strong>.</p>
 
-    <h2>Information Collection</h2>
+    <h2>Overview</h2>
     <p>
-      Money Mate is designed to help users manage their personal finances. The
-      current version of the app does not collect, transmit, sell, or share your
-      personal financial information with JRP Apps.
+      Money Mate is a local-first personal finance application. Your detailed
+      financial history is primarily stored on your device. Some optional
+      features, such as MoneyMate Account, Google Drive backup, Google services,
+      and advertising, require limited information to be processed by third-party
+      service providers as described below.
+    </p>
+    <p>
+      JRP Apps does not sell your personal financial information. Money Mate does
+      not send your transaction history, account balances, receipts, attachments,
+      OCR contents, or full financial database to Firebase for account sync.
     </p>
 
-    <h2>Financial Data</h2>
+    <h2>Financial Data Stored on Your Device</h2>
     <p>
-      Your income, expenses, budgets, categories, payment methods, notes, and
-      reports are stored locally on your device. JRP Apps does not operate a
-      server that receives or stores this financial information.
+      Money Mate stores detailed financial information locally on your device,
+      including transactions, financial accounts, balances, payment methods,
+      transaction notes, receipts or attachments, imported statement data,
+      reports, calculations, and financial history.
+    </p>
+    <p>
+      This detailed financial information remains in the local Money Mate database
+      unless you explicitly create or restore a backup, export or share a file, or
+      otherwise choose to send information outside the app.
     </p>
 
-    <h2>Local Backups, Imports, and Exports</h2>
+    <h2>MoneyMate Account and Google Sign-In</h2>
+    <p>
+      A MoneyMate Account is optional. You can continue to use Money Mate without
+      signing in. If you choose <strong>Continue with Google</strong>, Google Sign-In
+      and Firebase Authentication are used to authenticate your account.
+    </p>
+    <p>
+      Account-related information may include your Firebase user ID, email address,
+      display name, profile photo URL, account status, sign-in timestamps, and
+      profile information you choose to maintain in Money Mate, such as your name
+      or date of birth.
+    </p>
+
+    <h2>Firebase / Firestore Account Synchronization</h2>
+    <p>
+      When you are signed in, Money Mate may store and synchronize limited account
+      and configuration information using Google Firebase and Cloud Firestore.
+      This can include your MoneyMate profile configuration, category configuration,
+      budget configuration, last successful backup timestamp, account/synchronization
+      metadata, and subscription or entitlement metadata.
+    </p>
+    <p>
+      Firebase is not used as the storage location for your full Money Mate backup
+      or detailed financial transaction history. Money Mate does not intentionally
+      upload transactions, financial account balances, payment methods, receipts,
+      attachments, OCR contents, reports, exports, or the encrypted backup payload
+      to Firestore.
+    </p>
+
+    <h2>Google Drive Cloud Backup and Restore</h2>
+    <p>
+      Money Mate supports optional encrypted full backup and restore using Google
+      Drive on supported platforms. When you choose to create a cloud backup, the
+      encrypted Money Mate backup is stored in your Google Drive under your Google
+      account. Google Drive remains the storage provider for the full backup; the
+      full backup is not copied into Firebase or Firestore.
+    </p>
+    <p>
+      A backup may contain the financial information and attachments that are part
+      of the backup options you select. JRP Apps does not operate a separate server
+      that stores the contents of your Google Drive backup. Google processes Drive
+      files according to its own terms and privacy policy.
+    </p>
+
+    <h2>Local Backups, Imports, OCR, and Exports</h2>
     <p>
       Money Mate may allow you to create local backups, restore backup files,
-      import data, or export reports and transaction records. These actions are
-      performed only when you choose to use them.
+      import bank statements or other supported files, scan or attach receipts,
+      perform text extraction/OCR where supported, and export reports or transaction
+      records. These actions are initiated by you.
     </p>
     <p>
-      Backup and export files are saved to a location you select or shared using
-      the options available on your device. JRP Apps does not receive, upload,
-      or store these files.
-    </p>
-
-    <h2>Cloud Backup and Online Accounts</h2>
-    <p>
-      The current live version of Money Mate does not provide cloud backup,
-      cloud synchronization, or a Money Mate online account. If any such feature
-      is introduced in a future release, this Privacy Policy will be updated
-      before or when that feature becomes available.
+      Imported bank-statement contents and receipt/attachment contents are designed
+      to be processed within the app and are not intentionally uploaded to Firebase
+      or a JRP Apps server as part of the import or OCR process. Files you export or
+      share are handled by the destination, app, or storage location you select.
     </p>
 
-    <h2>Advertising and Analytics</h2>
+    <h2>Advertising</h2>
     <p>
-      The current live version of Money Mate does not display advertisements and
-      does not use advertising services. It also does not use third-party
-      analytics services to track your activity inside the app.
+      Money Mate may display advertisements through Google AdMob on supported
+      versions or platforms where advertising is enabled. Google Mobile Ads may
+      process information such as device or app identifiers, IP address, general
+      location derived from IP address, app information, ad interactions, and
+      diagnostic or fraud-prevention information in order to provide, measure,
+      secure, and where permitted personalize advertising.
+    </p>
+    <p>
+      Money Mate does not provide your detailed financial transaction history,
+      account balances, receipts, attachments, or bank-statement contents to AdMob
+      for advertising purposes. Google's handling of advertising data is governed
+      by Google's own privacy terms and your applicable Google/ad privacy settings.
     </p>
 
-    <h2>Permissions</h2>
+    <h2>Analytics, Diagnostics, and Support</h2>
     <p>
-      Money Mate requests only the permissions or system access needed to provide
-      its features. For example, the app may use the device file picker, storage
-      access provided by the operating system, or sharing tools when you choose
-      to import, export, back up, restore, open, or share a file.
+      Money Mate does not intentionally use your detailed financial records as
+      third-party analytics data. Advertising services may perform their own ad
+      measurement and diagnostics as described above.
     </p>
     <p>
-      These permissions and system features are used only to complete the action
-      you requested.
+      Money Mate may generate diagnostic information to help identify app problems,
+      such as app version, platform information, feature health checks, permission
+      status, backup availability or error status, and other technical information.
+      If the app allows you to export or share a diagnostic report, JRP Apps receives
+      that report only when you choose to send or share it with support.
+    </p>
+
+    <h2>Notifications and Reminders</h2>
+    <p>
+      Money Mate may schedule local notifications and reminders, including budget
+      alerts, daily reminders, backup reminders, and reminders you create. These are
+      primarily managed on your device. Notification permission may be requested
+      where required by the operating system.
+    </p>
+
+    <h2>Permissions and Device Access</h2>
+    <p>
+      Money Mate requests only permissions or system access needed for enabled
+      features. Depending on your device and the features you use, this may include
+      access to the file picker or document provider, camera or media selection for
+      receipts and attachments, notifications, network access for Google services,
+      Google Drive access for backup/restore, and system sharing tools.
+    </p>
+    <p>
+      Access is used to perform the feature you requested. Money Mate does not need
+      broad access to all files on your device for normal import/export flows where
+      the operating system provides a secure picker.
     </p>
 
     <h2>Data Security</h2>
     <p>
-      Your financial data remains under your control on your device. You are
-      responsible for keeping your device, device passcode, app lock, and any
-      backup files secure.
+      Money Mate is designed around a local-first architecture and includes
+      safeguards for locally stored information and encrypted cloud backups.
+      Information sent to Google/Firebase services is transmitted using the security
+      mechanisms provided by those services and the operating system.
     </p>
     <p>
-      Although Money Mate is designed to protect locally stored information, no
-      method of electronic storage or device protection can be guaranteed to be
-      completely secure.
+      No method of electronic storage, transmission, authentication, or device
+      protection can be guaranteed to be completely secure. You are responsible for
+      protecting your device, device passcode, Money Mate app lock, Google account,
+      and any backup or exported files you create.
     </p>
 
-    <h2>Data Deletion</h2>
+    <h2>Data Retention and Deletion</h2>
     <p>
-      You can delete individual records from within Money Mate. You can also
-      remove the app's locally stored data by using the available reset or delete
-      options in the app, clearing the app's data through your device settings,
-      or uninstalling the app.
+      Local financial data remains on your device until you delete records, use the
+      app's reset/delete options, clear the app's data through your device settings,
+      or uninstall the app. Local backup and exported files saved outside Money Mate
+      must be deleted separately from the location where you saved them.
     </p>
     <p>
-      Any local backup or exported files saved outside the app must be deleted
-      separately from the location where you saved them.
+      If you delete your MoneyMate Account, the app requests deletion of the Firebase
+      Authentication account and user-owned MoneyMate profile/configuration data that
+      is part of the account deletion flow. Deleting a MoneyMate Account does
+      <strong>not</strong> automatically delete your local financial database or your
+      Google Drive backup files. Those must be deleted separately if you want them
+      removed.
+    </p>
+    <p>
+      Certain limited records may be retained when reasonably necessary for legal,
+      security, fraud-prevention, billing, purchase-verification, or service-integrity
+      purposes, subject to the applicable service provider's policies and law.
+    </p>
+
+    <h2>Your Choices</h2>
+    <p>
+      You can use Money Mate without creating a MoneyMate Account. You can choose
+      whether to sign in, whether to create Google Drive backups, whether to import
+      or export files, and whether to share diagnostic information with support.
+      Where advertising privacy or consent controls are available through Google or
+      your device, you can use those controls to manage applicable advertising
+      preferences.
     </p>
 
     <h2>Children's Privacy</h2>
     <p>
-      Money Mate is not directed at children and does not knowingly collect
-      personal information from children.
+      Money Mate is not directed at children and JRP Apps does not knowingly use
+      Money Mate to collect personal financial information from children.
     </p>
 
     <h2>Third-Party Services</h2>
     <p>
-      The current live version of Money Mate does not use Google AdMob, cloud
-      backup providers, developer-operated servers, or third-party analytics to
-      process your financial information.
+      Depending on the features you use and the platform, Money Mate may use Google
+      services including Google Sign-In, Firebase Authentication, Cloud Firestore,
+      Google Drive, Google AdMob, and Google Play services. These providers may
+      process technical, authentication, account, storage, advertising, or service
+      usage information according to their own terms and privacy policies.
     </p>
     <p>
-      Your device's operating system or apps you choose when opening, saving, or
-      sharing a file may process that file according to their own privacy terms.
+      Google privacy information:
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a> ·
+      <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase Privacy and Security</a> ·
+      <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer">How Google uses information from apps that use Google services</a>
+    </p>
+
+    <h2>International Data Processing</h2>
+    <p>
+      Third-party providers such as Google may process account, authentication,
+      cloud-storage, or advertising information in countries where they or their
+      service providers operate. Their processing is governed by their applicable
+      terms, privacy policies, and data-protection commitments.
     </p>
 
     <h2>Changes to This Privacy Policy</h2>
     <p>
       This Privacy Policy may be updated when Money Mate adds, removes, or changes
-      features, permissions, or third-party services. The updated policy will be
-      published on this page with a revised "Last Updated" date.
+      features, permissions, account synchronization, backup behavior, advertising,
+      or third-party services. The updated policy will be published on this page
+      with a revised "Last Updated" date.
     </p>
 
     <h2>Contact</h2>
@@ -209,7 +327,7 @@
       Email: <a href="mailto:support@jrphub.com">support@jrphub.com</a>
     </p>
 
-    <p class="last-updated">Site page reviewed: August 3, 2026</p>
+    <p class="last-updated">Site page reviewed: August 22, 2026</p>
   </main>
 
   <footer class="policy-footer">
