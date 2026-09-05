@@ -1,48 +1,352 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>JRP Business Portal Privacy Policy</title>
-<style>
-        body{
-            font-family:Arial,Helvetica,sans-serif;
-            max-width:900px;
-            margin:40px auto;
-            padding:20px;
-            line-height:1.7;
-            color:#333;
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Read the PMS (Powerloom Management System) privacy policy, covering organizational operational records, powerloom production tracking, data handling, and security." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="canonical" href="https://apps.jrphub.com/privacy/pms.html" />
+  <title>Powerloom Management System (PMS) Privacy Policy | JRP Apps</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png"/>
+<link rel="icon" type="image/png" href="../assets/images/jrplogo.png"/>
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png"/>
+
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #687086;
+      --accent: #15803d;
+      --accent-soft: #dcfce7;
+      --border: #e7eaf0;
+      --shadow: 0 18px 50px rgba(24, 32, 51, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(91, 92, 226, 0.10), transparent 34%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 30px 20px 34px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 22.5% !important;
+      overflow: hidden !important;
+      display: block;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 22.5% !important;
+      overflow: hidden !important;
+      overflow: hidden;
+      background: linear-gradient(135deg, #22c55e, #15803d);
+      color: white;
+      font-weight: 800;
+      box-shadow: 0 10px 24px rgba(79, 70, 229, 0.25);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 52px);
+      line-height: 1.08;
+      letter-spacing: -1.3px;
+    }
+
+    .subtitle {
+      max-width: 660px;
+      margin: 16px auto 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .updated {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #166534;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .intro {
+      padding: 30px 34px 12px;
+    }
+
+    .highlight {
+      margin: 0 0 24px;
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #f8f9ff, #f8fafc);
+      border: 1px solid #e2e8f0;
+    }
+
+    .highlight strong {
+      color: #166534;
+    }
+
+    section {
+      padding: 6px 34px 28px;
+    }
+
+    section + section {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 21px;
+      letter-spacing: -0.35px;
+    }
+
+    p {
+      margin: 0;
+      color: #3e475c;
+    }
+
+    p + p {
+      margin-top: 10px;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+      color: #3e475c;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 8px;
+      font-size: 13px;
+      color: #0f172a;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      padding-top: 26px;
+    }
+
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding: 24px 0 38px;
+      }
+
+      .hero {
+        padding: 20px 12px 26px;
+      }
+
+      .intro,
+      section {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .card {
+        border-radius: 20px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json" data-schema="breadcrumb">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://apps.jrphub.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Privacy Policies",
+          "item": "https://apps.jrphub.com/privacy/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Powerloom Management System (PMS) Privacy Policy",
+          "item": "https://apps.jrphub.com/privacy/pms.html"
         }
-        h1,h2{
-            color:#2E7D32;
-        }
-    
-.policy-navigation{margin-bottom:28px;padding-bottom:16px;border-bottom:1px solid #ddd}.policy-navigation a,.policy-footer a{color:inherit;font-weight:700}.policy-footer{margin-top:36px;padding-top:18px;border-top:1px solid #ddd;font-size:14px}.policy-footer p{margin-bottom:0}
-</style>
-<meta content="Read the JRP Business Portal privacy policy, including information about data handling, permissions, third-party services and support." name="description"/><link href="https://apps.jrphub.com/privacy/jrp_business_app.html" rel="canonical"/><meta content="index, follow, max-image-preview:large" name="robots"/><meta content="#ffffff" name="theme-color"/><script data-schema="breadcrumb" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://apps.jrphub.com/"},{"@type":"ListItem","position":2,"name":"Privacy Policies","item":"https://apps.jrphub.com/privacy/"},{"@type":"ListItem","position":3,"name":"JRP Business Portal Master Privacy Policy","item":"https://apps.jrphub.com/privacy/jrp_business_app.html"}]}</script></head>
-<body><nav aria-label="Privacy policy navigation" class="policy-navigation"><a href="./">← All privacy policies</a> · <a href="../apps/jrp_business_app/">JRP Business Portal Master overview</a> · <a href="../sitemap.html">HTML sitemap</a></nav>
-<h1>JRP Business Portal Privacy Policy</h1>
-<p><strong>Last Updated:</strong> July 2026</p>
-<p>JRP Business Portal is developed by <strong>JRP Apps</strong>.</p>
-<h2>Information Collection</h2>
-<p>JRP Business Portal is designed to help users manage their personal finances. The app does not collect, transmit, or sell your personal financial information.</p>
-<h2>Financial Data</h2>
-<p>Your income, expenses, budgets, categories, and reports are stored locally on your device unless you choose to use a future backup or synchronization feature.</p>
-<h2>Permissions</h2>
-<p>The app only requests permissions that are necessary for its features. No unnecessary permissions are requested.</p>
-<h2>Third-Party Services</h2>
-<p>If future versions include services such as Google AdMob, Google Drive backup, Firebase, or analytics, those services may process limited information according to their own privacy policies.</p>
-<h2>Data Security</h2>
-<p>We do not access your financial information. Your data remains under your control on your device.</p>
-<h2>Children's Privacy</h2>
-<p>JRP Business Portal is not intended to knowingly collect personal information from children.</p>
-<h2>Changes to This Privacy Policy</h2>
-<p>This Privacy Policy may be updated when new features or services are introduced.</p>
-<h2>Contact</h2>
-<p>
-Developer: JRP Apps<br/>
-Email: <a href="mailto:prashantrh034@gmail.com">prashantrh034@gmail.com</a>
-</p>
-<p class="last-updated">Site page reviewed: July 18, 2026</p><footer class="policy-footer"><p><a href="../">JRP Apps home</a> · <a href="../apps/jrp_business_app/">App overview</a> · <a href="./">All privacy policies</a> · <a href="../sitemap.html">HTML sitemap</a> · <a href="mailto:support@jrphub.com">Contact</a> · <a href="https://jrphub.com/">JRP Industries</a></p></footer></body>
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="brand">
+        <span class="brand-mark"><img src="../assets/app-icons/pms.png" alt="App icon" width="34" height="34" /></span>
+        <span>PMS (Powerloom Management System)</span>
+      </div>
+
+      <h1>Privacy Policy</h1>
+
+      <p class="subtitle">
+        PMS (Powerloom Management System) provides specialized manufacturing workflow management, loom operation tracking, shift production records, beam inventory, and textile organization administration.
+      </p>
+
+      <span class="updated">Last updated: September 2026</span>
+    </header>
+
+    <article class="card">
+      <div class="intro">
+        <div class="highlight">
+          <strong>Textile organization privacy and operational data security.</strong>
+          PMS (Powerloom Management System) is built to maintain strict confidentiality and operational data boundaries. Your organization's loom metrics, shift production logs, inventory records, and employee rosters remain strictly protected under your organization's control without unauthorized access or data sales.
+        </div>
+      </div>
+
+      <section>
+        <h2>Information Collection &amp; Usage</h2>
+        <p>PMS (Powerloom Management System) is designed for textile enterprises and powerloom manufacturing units. The application processes operational and production metrics entered by authorized personnel, including:</p>
+        <ul>
+          <li>Loom operational status, rpm, and production efficiency counters.</li>
+          <li>Shift-wise fabric production logs (meters/picks produced).</li>
+          <li>Beam inventory, warp/weft specifications, and yarn stock tracking.</li>
+          <li>Weaver/worker attendance, shift allocations, and operational notes.</li>
+          <li>Organizational business reports and production summaries.</li>
+        </ul>
+        <p>The app does not collect, transmit, or sell your organization's proprietary manufacturing, employee, or financial data.</p>
+      </section>
+
+      <section>
+        <h2>Data Storage and Organization Control</h2>
+        <p>All manufacturing records, shift logs, beam trackers, and organizational configurations are stored locally on your device or within your organization's authorized backup/database instance. JRP Apps does not maintain remote backdoors or unauthorized cloud mirrors of your industrial records.</p>
+      </section>
+
+      <section>
+        <h2>Device Permissions</h2>
+        <p>PMS only requests permissions strictly necessary for its enterprise features:</p>
+        <ul>
+          <li><strong>Storage / SAF (Storage Access Framework):</strong> To export shift logs, monthly production audits, and CSV/PDF summaries upon your explicit request.</li>
+          <li><strong>Network (Optional):</strong> Used only when your organization configures centralized synchronization or checks for software updates.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Third-Party Services</h2>
+        <p>If your organization enables optional enterprise backup features (such as secure Google Drive sync, local enterprise servers, or Firebase diagnostics), those services process data strictly under your account credentials and their respective enterprise privacy policies.</p>
+      </section>
+
+      <section>
+        <h2>Data Security</h2>
+        <p>We do not access or commercialize your industrial production metrics. Your manufacturing and organizational data remains under your organization's complete control.</p>
+      </section>
+
+      <section>
+        <h2>Closed Beta Testing</h2>
+        <p>PMS is currently participating in closed beta testing. Testers can join the universal JRP testing community by subscribing to <a href="https://groups.google.com/g/jrpapps-testers" target="_blank" rel="noopener">jrpapps-testers@googlegroups.com</a>.</p>
+      </section>
+
+      <section>
+        <h2>Changes to This Privacy Policy</h2>
+        <p>This Privacy Policy may be updated as new industrial management features, reporting modules, or compatibility updates are released.</p>
+      </section>
+
+      <section>
+        <h2>Contact &amp; Support</h2>
+        <p>
+        Developer: JRP Apps<br/>
+        Email: <a href="mailto:support@jrphub.com">support@jrphub.com</a><br/>
+        Testers Group: <a href="https://groups.google.com/g/jrpapps-testers" target="_blank" rel="noopener">jrpapps-testers@googlegroups.com</a>
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <div class="contact">
+        <span>© 2026 JRP Apps</span>
+        <span>•</span>
+        <span>PMS (Powerloom Management System)</span>
+        <span>•</span>
+        <a href="./">All Privacy Policies</a>
+        <span>•</span>
+        <a href="../sitemap.html">HTML Sitemap</a>
+        <span>•</span>
+        <a href="../">Home</a>
+      </div>
+    </footer>
+  </main>
+</body>
 </html>

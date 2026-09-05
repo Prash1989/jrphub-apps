@@ -1,48 +1,339 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Water Sort Privacy Policy</title>
-<style>
-        body{
-            font-family:Arial,Helvetica,sans-serif;
-            max-width:900px;
-            margin:40px auto;
-            padding:20px;
-            line-height:1.7;
-            color:#333;
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Read the Water Sort Master privacy policy, including information about gameplay data, local storage, advertising, permissions, third-party services, and support." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="canonical" href="https://apps.jrphub.com/privacy/watersort.html" />
+  <title>Water Sort Master Privacy Policy | JRP Apps</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png"/>
+<link rel="icon" type="image/png" href="../assets/images/jrplogo.png"/>
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png"/>
+
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #687086;
+      --accent: #0284c7;
+      --accent-soft: #e0f2fe;
+      --border: #e7eaf0;
+      --shadow: 0 18px 50px rgba(24, 32, 51, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(91, 92, 226, 0.10), transparent 34%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 30px 20px 34px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 22.5% !important;
+      overflow: hidden !important;
+      display: block;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 22.5% !important;
+      overflow: hidden !important;
+      overflow: hidden;
+      background: linear-gradient(135deg, #0ea5e9, #0284c7);
+      color: white;
+      font-weight: 800;
+      box-shadow: 0 10px 24px rgba(79, 70, 229, 0.25);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 52px);
+      line-height: 1.08;
+      letter-spacing: -1.3px;
+    }
+
+    .subtitle {
+      max-width: 660px;
+      margin: 16px auto 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .updated {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #075985;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .intro {
+      padding: 30px 34px 12px;
+    }
+
+    .highlight {
+      margin: 0 0 24px;
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #f8f9ff, #f8fafc);
+      border: 1px solid #e2e8f0;
+    }
+
+    .highlight strong {
+      color: #075985;
+    }
+
+    section {
+      padding: 6px 34px 28px;
+    }
+
+    section + section {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 21px;
+      letter-spacing: -0.35px;
+    }
+
+    p {
+      margin: 0;
+      color: #3e475c;
+    }
+
+    p + p {
+      margin-top: 10px;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+      color: #3e475c;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 8px;
+      font-size: 13px;
+      color: #0f172a;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      padding-top: 26px;
+    }
+
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding: 24px 0 38px;
+      }
+
+      .hero {
+        padding: 20px 12px 26px;
+      }
+
+      .intro,
+      section {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .card {
+        border-radius: 20px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json" data-schema="breadcrumb">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://apps.jrphub.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Privacy Policies",
+          "item": "https://apps.jrphub.com/privacy/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Water Sort Master Privacy Policy",
+          "item": "https://apps.jrphub.com/privacy/watersort.html"
         }
-        h1,h2{
-            color:#2E7D32;
-        }
-    
-.policy-navigation{margin-bottom:28px;padding-bottom:16px;border-bottom:1px solid #ddd}.policy-navigation a,.policy-footer a{color:inherit;font-weight:700}.policy-footer{margin-top:36px;padding-top:18px;border-top:1px solid #ddd;font-size:14px}.policy-footer p{margin-bottom:0}
-</style>
-<meta content="Read the Water Sort privacy policy, including information about data handling, permissions, third-party services and support." name="description"/><link href="https://apps.jrphub.com/privacy/watersort.html" rel="canonical"/><meta content="index, follow, max-image-preview:large" name="robots"/><meta content="#ffffff" name="theme-color"/><script data-schema="breadcrumb" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://apps.jrphub.com/"},{"@type":"ListItem","position":2,"name":"Privacy Policies","item":"https://apps.jrphub.com/privacy/"},{"@type":"ListItem","position":3,"name":"Water Sort Master Privacy Policy","item":"https://apps.jrphub.com/privacy/watersort.html"}]}</script></head>
-<body><nav aria-label="Privacy policy navigation" class="policy-navigation"><a href="./">← All privacy policies</a> · <a href="../apps/watersort/">Water Sort Master overview</a> · <a href="../sitemap.html">HTML sitemap</a></nav>
-<h1>Water Sort Privacy Policy</h1>
-<p><strong>Last Updated:</strong> July 2026</p>
-<p>Water Sort is developed by <strong>JRP Apps</strong>.</p>
-<h2>Information Collection</h2>
-<p>Water Sort is designed to help users manage their personal finances. The app does not collect, transmit, or sell your personal financial information.</p>
-<h2>Financial Data</h2>
-<p>Your income, expenses, budgets, categories, and reports are stored locally on your device unless you choose to use a future backup or synchronization feature.</p>
-<h2>Permissions</h2>
-<p>The app only requests permissions that are necessary for its features. No unnecessary permissions are requested.</p>
-<h2>Third-Party Services</h2>
-<p>If future versions include services such as Google AdMob, Google Drive backup, Firebase, or analytics, those services may process limited information according to their own privacy policies.</p>
-<h2>Data Security</h2>
-<p>We do not access your financial information. Your data remains under your control on your device.</p>
-<h2>Children's Privacy</h2>
-<p>Water Sort is not intended to knowingly collect personal information from children.</p>
-<h2>Changes to This Privacy Policy</h2>
-<p>This Privacy Policy may be updated when new features or services are introduced.</p>
-<h2>Contact</h2>
-<p>
-Developer: JRP Apps<br/>
-Email: <a href="mailto:support@jrphub">support@jrphub</a>
-</p>
-<p class="last-updated">Site page reviewed: July 18, 2026</p><footer class="policy-footer"><p><a href="../">JRP Apps home</a> · <a href="../apps/watersort/">App overview</a> · <a href="./">All privacy policies</a> · <a href="../sitemap.html">HTML sitemap</a> · <a href="mailto:support@jrphub.com">Contact</a> · <a href="https://jrphub.com/">JRP Industries</a></p></footer></body>
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="brand">
+        <span class="brand-mark"><img src="../assets/app-icons/watersort.png" alt="App icon" width="34" height="34" /></span>
+        <span>Water Sort Master</span>
+      </div>
+
+      <h1>Privacy Policy</h1>
+
+      <p class="subtitle">
+        Water Sort Master is a color sorting puzzle game with hundreds of challenging tube-sorting puzzle levels.
+      </p>
+
+      <span class="updated">Last updated: August 2026</span>
+    </header>
+
+    <article class="card">
+      <div class="intro">
+        <div class="highlight">
+          <strong>Play with complete privacy.</strong>
+          Water Sort Master stores your puzzle progression and settings locally on your device without collecting personal data or requiring an account.
+        </div>
+      </div>
+
+      <section>
+        <h2>Information We Collect</h2>
+        <p>Water Sort Master is a color sorting puzzle game. The app does not collect, store, transmit, or sell any personally identifiable information.</p>
+      </section>
+
+      <section>
+        <h2>Gameplay and Local Data</h2>
+        <p>Your puzzle level progression, unlocked features, audio preferences, and settings are stored locally on your device only. They are not uploaded to any external server.</p>
+      </section>
+
+      <section>
+        <h2>Permissions</h2>
+        <p>The app only requests standard permissions necessary for game operation and display. It does not require access to your contacts, camera, microphone, precise location, or photos.</p>
+      </section>
+
+      <section>
+        <h2>Advertisements and Third-Party Services</h2>
+        <p>Water Sort Master may display advertisements provided by third-party ad networks such as Google AdMob. These services may collect pseudonymous identifiers and diagnostic data in accordance with their respective privacy policies.</p>
+      </section>
+
+      <section>
+        <h2>Data Security</h2>
+        <p>Because your game progress is stored locally on your device, you remain in full control of your data.</p>
+      </section>
+
+      <section>
+        <h2>Children's Privacy</h2>
+        <p>Water Sort Master is not intended to knowingly collect personal information from children.</p>
+      </section>
+
+      <section>
+        <h2>Changes to This Privacy Policy</h2>
+        <p>This Privacy Policy may be updated periodically when new features, levels, or services are introduced.</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+        Developer: JRP Apps<br/>
+        Email: <a href="mailto:support@jrphub.com">support@jrphub.com</a>
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <div class="contact">
+        <span>© 2026 JRP Apps</span>
+        <span>•</span>
+        <span>Water Sort Master</span>
+        <span>•</span>
+        <a href="./">All Privacy Policies</a>
+        <span>•</span>
+        <a href="../sitemap.html">HTML Sitemap</a>
+        <span>•</span>
+        <a href="../">Home</a>
+      </div>
+    </footer>
+  </main>
+</body>
 </html>

@@ -2,63 +2,228 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Element Burst Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
     content="Read the Element Burst privacy policy, including Firebase authentication, player statistics, rankings, telemetry, advertising, diagnostics, Admin analytics, permissions, security, and data deletion."
   />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0f172a" />
   <link rel="canonical" href="https://apps.jrphub.com/privacy/elementburst.html" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="theme-color" content="#ffffff" />
+  <title>Element Burst Privacy Policy | JRP Apps</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png"/>
+<link rel="icon" type="image/png" href="../assets/images/jrplogo.png"/>
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png"/>
 
   <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #687086;
+      --accent: #ea580c;
+      --accent-soft: #ffedd5;
+      --border: #e7eaf0;
+      --shadow: 0 18px 50px rgba(24, 32, 51, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      line-height: 1.7;
-      color: #333;
-      background: #fff;
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(234, 88, 12, 0.10), transparent 34%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.75;
     }
 
-    h1,
-    h2 {
-      color: #2e7d32;
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
     }
 
-    a {
-      color: #2e7d32;
+    .hero {
+      text-align: center;
+      padding: 30px 20px 34px;
     }
 
-    .policy-navigation {
-      margin-bottom: 28px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid #ddd;
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: 0.2px;
     }
 
-    .policy-navigation a,
-    .policy-footer a {
-      color: inherit;
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 22.5% !important;
+      overflow: hidden !important;
+      display: block;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 22.5% !important;
+      overflow: hidden !important;
+      overflow: hidden;
+      background: linear-gradient(135deg, #ea580c, #c2410c);
+      color: white;
+      font-weight: 800;
+      box-shadow: 0 10px 24px rgba(234, 88, 12, 0.25);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 52px);
+      line-height: 1.08;
+      letter-spacing: -1.3px;
+    }
+
+    .subtitle {
+      max-width: 660px;
+      margin: 16px auto 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .updated {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #9a3412;
+      font-size: 13px;
       font-weight: 700;
     }
 
-    .policy-footer {
-      margin-top: 36px;
-      padding-top: 18px;
-      border-top: 1px solid #ddd;
-      font-size: 14px;
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
     }
 
-    .policy-footer p {
-      margin-bottom: 0;
+    .intro {
+      padding: 30px 34px 12px;
     }
 
-    .last-updated {
-      margin-top: 28px;
+    .highlight {
+      margin: 0 0 24px;
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #fff7ed, #f8fafc);
+      border: 1px solid #fed7aa;
+    }
+
+    .highlight strong {
+      color: #9a3412;
+    }
+
+    section {
+      padding: 6px 34px 28px;
+    }
+
+    section + section {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 21px;
+      letter-spacing: -0.35px;
+    }
+
+    p {
+      margin: 0;
+      color: #3e475c;
+    }
+
+    p + p {
+      margin-top: 10px;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+      color: #3e475c;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 8px;
+      font-size: 13px;
+      color: #0f172a;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
       font-size: 14px;
-      color: #666;
+      padding-top: 26px;
+    }
+
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding: 24px 0 38px;
+      }
+
+      .hero {
+        padding: 20px 12px 26px;
+      }
+
+      .intro,
+      section {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .card {
+        border-radius: 20px;
+      }
     }
   </style>
 
@@ -91,259 +256,226 @@
 </head>
 
 <body>
-  <nav class="policy-navigation" aria-label="Privacy policy navigation">
-    <a href="./">← All privacy policies</a> ·
-    <a href="../apps/elementburst/">Element Burst overview</a> ·
-    <a href="../sitemap.html">HTML sitemap</a>
-  </nav>
+  <main class="page">
+    <header class="hero">
+      <div class="brand">
+        <span class="brand-mark"><img src="../assets/app-icons/elementburst.png" alt="App icon" width="34" height="34" /></span>
+        <span>Element Burst</span>
+      </div>
 
-  <main>
-    <h1>Element Burst Privacy Policy</h1>
-    <p><strong>Last Updated:</strong> August 23, 2026</p>
-    <p>Element Burst is developed by <strong>JRP Apps</strong>.</p>
+      <h1>Privacy Policy</h1>
 
-    <h2>Overview</h2>
-    <p>
-      Element Burst is a puzzle game that may use online services for account
-      authentication, player statistics, rankings, gameplay telemetry, advertising,
-      diagnostics, and administrative analytics.
-    </p>
-    <p>
-      JRP Apps does not sell your personal information. Information collected by
-      Element Burst is used to operate the game, maintain player progress and
-      statistics where applicable, provide rankings, improve reliability and gameplay
-      quality, prevent abuse, and support advertising where enabled.
-    </p>
+      <p class="subtitle">
+        Element Burst is an Android puzzle game in closed testing on Google Play featuring elemental challenges, player rankings, statistics, and interactive gameplay.
+      </p>
 
-    <h2>Game Data Stored on Your Device</h2>
-    <p>
-      Element Burst may store game-related information locally on your device,
-      including gameplay progress, completed levels, coins or rewards, settings,
-      tutorial state, audio preferences, cached statistics, session information,
-      and other data required for normal game operation.
-    </p>
-    <p>
-      Some locally stored information may remain on your device until you reset the
-      game, clear the app's data through your device settings, or uninstall the app.
-    </p>
+      <div style="margin-top:16px;padding:16px;border-radius:14px;background:rgba(249,115,22,0.08);border:1px solid rgba(249,115,22,0.25);text-align:left;">
+        <strong style="color:#fb923c;display:block;font-size:14px;margin-bottom:6px;">🧪 How to Join Closed Testing:</strong>
+        <p style="margin:0 0 10px;font-size:13px;line-height:1.5;color:var(--text-muted);">
+          Joining our universal testers group once gives you closed testing access for <strong>all JRP apps and games</strong>, including Element Burst:
+        </p>
+        <ol style="margin:0 0 12px 18px;padding:0;font-size:13px;line-height:1.6;color:var(--text-muted);">
+          <li>Join the Universal Testers Group: <a href="https://groups.google.com/g/jrpapps-testers" target="_blank" rel="noopener" style="color:#fb923c;font-weight:600;text-decoration:underline;">jrpapps-testers@googlegroups.com</a></li>
+          <li>Opt-in &amp; install Element Burst on Google Play: <a href="https://play.google.com/apps/testing/com.jrpapps.elementburst" target="_blank" rel="noopener" style="color:#fb923c;font-weight:600;text-decoration:underline;">Join Testing on Google Play ↗</a></li>
+        </ol>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <a href="https://groups.google.com/g/jrpapps-testers" target="_blank" rel="noopener" style="display:inline-flex;padding:9px 14px;border-radius:10px;background:#f97316;color:#fff;text-decoration:none;font-size:12px;font-weight:700;">1. Join Testers Group (All Apps) ↗</a>
+          <a href="https://play.google.com/apps/testing/com.jrpapps.elementburst" target="_blank" rel="noopener" style="display:inline-flex;padding:9px 14px;border-radius:10px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.2);color:#e2e8f0;text-decoration:none;font-size:12px;font-weight:700;">2. Join Google Play Testing ↗</a>
+        </div>
+      </div>
 
-    <h2>Account and Authentication</h2>
-    <p>
-      Element Burst may use Google Firebase Authentication to identify or authenticate
-      players where account functionality is enabled. Depending on the sign-in method
-      available in the app, account-related information may include a Firebase user ID,
-      email address, display name, profile photo URL, authentication provider, account
-      status, and sign-in timestamps.
-    </p>
-    <p>
-      Authentication information is used to provide account-related features and to
-      associate supported cloud features, statistics, rankings, or player records with
-      the correct user.
-    </p>
+      <span class="updated">Last updated: August 23, 2026</span>
+    </header>
 
-    <h2>Firebase / Cloud Firestore</h2>
-    <p>
-      Element Burst may use Google Firebase and Cloud Firestore to store or synchronize
-      limited game and account information needed for online features.
-    </p>
-    <p>
-      Depending on the enabled features, this may include player identifiers,
-      profile-related information, gameplay statistics, ranking information, streaks,
-      level-completion totals, reward or coin-related state, feature configuration,
-      moderation or integrity metadata, and synchronization timestamps.
-    </p>
+    <article class="card">
+      <div class="intro">
+        <div class="highlight">
+          <strong>Your privacy is respected.</strong>
+          JRP Apps does not sell your personal data. Information collected by Element Burst is used strictly to operate the game, maintain player progress, provide rankings, prevent abuse, and improve gameplay reliability.
+        </div>
+      </div>
 
-    <h2>Player Statistics and Rankings</h2>
-    <p>
-      Element Burst may provide player-facing statistics such as daily streak,
-      levels completed today, weekly progress, best streak, total levels completed,
-      win rate, play days, coins or rewards earned, personal bests, rank, and
-      percentile.
-    </p>
-    <p>
-      Global or weekly rankings may use a player identifier, display name or other
-      permitted profile information together with relevant gameplay statistics.
-      Rankings are intended to show game performance and should not expose private
-      account credentials.
-    </p>
+      <section>
+        <h2>Overview</h2>
+        <p>
+          Element Burst is developed by <strong>JRP Apps</strong>. It is a puzzle game that may use online services for account authentication, player statistics, rankings, gameplay telemetry, advertising, diagnostics, and administrative analytics.
+        </p>
+        <p>
+          We aim to collect only information that is reasonably necessary to deliver game features and ensure a smooth, stable experience across devices.
+        </p>
+      </section>
 
-    <h2>Gameplay Telemetry and Analytics</h2>
-    <p>
-      Element Burst may collect gameplay and product telemetry to understand how the
-      game is being used and to improve reliability, balancing, engagement, and user
-      experience.
-    </p>
-    <p>
-      This information may include app version, platform, session activity, levels
-      started or completed, wins or failures, progress milestones, reward activity,
-      ad views or completions, feature usage, error states, performance information,
-      timestamps, and other gameplay events.
-    </p>
-    <p>
-      Telemetry may be processed in the background or in batches so that analytics
-      collection does not unnecessarily interfere with gameplay responsiveness.
-    </p>
+      <section>
+        <h2>Game Data Stored on Your Device</h2>
+        <p>
+          Element Burst may store game-related information locally on your device, including gameplay progress, completed levels, coins or rewards, settings, tutorial state, audio preferences, cached statistics, session information, and other data required for normal game operation.
+        </p>
+        <p>
+          Locally stored information remains on your device until you reset the game, clear app data through your device settings, or uninstall the application.
+        </p>
+      </section>
 
-    <h2>Administrative Analytics</h2>
-    <p>
-      JRP Apps may use restricted administrative analytics to operate and understand
-      Element Burst. Administrative analytics are separate from the player-facing
-      Statistics screen and are not intended to be exposed to ordinary players.
-    </p>
-    <p>
-      Administrative analytics may include known users or installations, daily or
-      weekly active users, gameplay activity, levels completed, average levels
-      completed per active user, ad views or completions, engagement trends,
-      feature usage, technical health information, and similar aggregate or
-      operational metrics.
-    </p>
+      <section>
+        <h2>Account and Authentication</h2>
+        <p>
+          Element Burst may use Google Firebase Authentication to identify or authenticate players where online account functionality is enabled.
+        </p>
+        <p>
+          Depending on the sign-in method used, account-related information may include a Firebase user ID, email address, display name, profile photo URL, authentication provider, account status, and sign-in timestamps.
+        </p>
+        <p>
+          Authentication data is used to provide account features and associate cloud saves, statistics, and leaderboard records with the correct player.
+        </p>
+      </section>
 
-    <h2>Advertising</h2>
-    <p>
-      Element Burst may display advertisements through Google AdMob on supported
-      platforms where advertising is enabled. Google Mobile Ads may process information
-      such as device or app identifiers, IP address, general location derived from IP
-      address, app information, ad interactions, diagnostic information, and
-      fraud-prevention information in order to provide, measure, secure, and where
-      permitted personalize advertising.
-    </p>
-    <p>
-      Advertising providers process information according to their own privacy terms
-      and your applicable Google, device, and advertising-consent settings.
-    </p>
+      <section>
+        <h2>Firebase and Cloud Firestore</h2>
+        <p>
+          Element Burst may use Google Firebase and Cloud Firestore to store or synchronize limited game and account information needed for online features.
+        </p>
+        <p>
+          Depending on enabled features, this may include player identifiers, profile details, gameplay statistics, rankings, daily streaks, level completion milestones, reward state, feature flags, and synchronization timestamps.
+        </p>
+      </section>
 
-    <h2>Diagnostics and Crash Information</h2>
-    <p>
-      Element Burst may process diagnostic or technical information to identify
-      crashes, failed network operations, authentication problems, synchronization
-      issues, performance problems, or other defects.
-    </p>
-    <p>
-      Diagnostic information may include app version, operating system or platform,
-      device or runtime characteristics, timestamps, error details, network state,
-      feature health information, and related technical data.
-    </p>
+      <section>
+        <h2>Player Statistics and Rankings</h2>
+        <p>
+          Element Burst may provide player statistics such as daily streak, levels completed, weekly progress, best streak, total levels completed, win rate, play days, coins earned, personal bests, rank, and percentile.
+        </p>
+        <p>
+          Global or weekly rankings may use a player identifier, display name, or permitted profile details alongside gameplay metrics. Leaderboards showcase game performance and never expose private account credentials.
+        </p>
+      </section>
 
-    <h2>Network Access</h2>
-    <p>
-      Element Burst requires network access for enabled online features such as
-      Firebase Authentication, Cloud Firestore, telemetry, statistics, rankings,
-      advertising, configuration, and administrative services.
-    </p>
-    <p>
-      Core game availability and the behavior of offline features may depend on the
-      version of the app and whether a particular feature requires a network connection.
-    </p>
+      <section>
+        <h2>Gameplay Telemetry and Analytics</h2>
+        <p>
+          Element Burst may collect gameplay and product telemetry to understand usage trends and improve reliability, game balancing, engagement, and overall player experience.
+        </p>
+        <p>
+          This telemetry may include app version, platform, session activity, levels started/completed, win/loss events, progress milestones, reward events, ad interactions, error states, and performance metrics.
+        </p>
+        <p>
+          Telemetry is processed asynchronously in batches to ensure seamless and responsive gameplay.
+        </p>
+      </section>
 
-    <h2>Permissions and Device Access</h2>
-    <p>
-      Element Burst requests only permissions or system access needed for enabled
-      features. This may include network access and other permissions required by the
-      operating system or supported advertising and Google services.
-    </p>
-    <p>
-      Permissions are used for the purposes associated with the relevant feature and
-      are subject to the controls provided by your device and operating system.
-    </p>
+      <section>
+        <h2>Administrative Analytics</h2>
+        <p>
+          JRP Apps may use restricted administrative analytics to monitor and maintain Element Burst. These operational metrics are separate from player-facing statistics and are not accessible to regular players.
+        </p>
+        <p>
+          Administrative analytics include aggregate installation counts, active user metrics, average levels completed, engagement trends, and system health indicators.
+        </p>
+      </section>
 
-    <h2>Data Security</h2>
-    <p>
-      Element Burst uses the security mechanisms provided by the operating system,
-      Google Firebase, and other supported service providers for information stored or
-      transmitted through those services.
-    </p>
-    <p>
-      No method of electronic storage, transmission, authentication, or device
-      protection can be guaranteed to be completely secure. You are responsible for
-      protecting your device and any account credentials used with the game.
-    </p>
+      <section>
+        <h2>Advertising</h2>
+        <p>
+          Element Burst may display advertisements through Google AdMob on supported platforms where advertising is enabled.
+        </p>
+        <p>
+          Google Mobile Ads may process information such as device/app identifiers, IP address, general location derived from IP, ad interactions, and diagnostic metrics to deliver, measure, secure, and (where permitted) personalize advertising according to your consent settings and Google's privacy policy.
+        </p>
+      </section>
 
-    <h2>Data Retention and Deletion</h2>
-    <p>
-      Local game data remains on your device until it is deleted through available
-      in-app options, cleared through device settings, reset where supported, or removed
-      by uninstalling the app.
-    </p>
-    <p>
-      Cloud-hosted account, statistics, ranking, telemetry, or configuration data may
-      be retained for as long as reasonably necessary to provide the relevant service,
-      maintain game integrity, prevent fraud or abuse, resolve technical issues, meet
-      legal obligations, or support legitimate operational requirements.
-    </p>
-    <p>
-      Where Element Burst provides an account-deletion feature, deletion requests may
-      remove or schedule removal of user-owned account information covered by that
-      feature. Some limited records may be retained where reasonably necessary for
-      security, fraud-prevention, legal, billing, purchase-verification, or
-      service-integrity purposes.
-    </p>
+      <section>
+        <h2>Diagnostics and Technical Information</h2>
+        <p>
+          Element Burst may process diagnostic information to troubleshoot crashes, failed network operations, authentication errors, or performance bottlenecks.
+        </p>
+        <p>
+          Diagnostic records may include app build version, operating system, runtime characteristics, error logs, and network state.
+        </p>
+      </section>
 
-    <h2>Your Choices</h2>
-    <p>
-      Depending on the version and platform, you may be able to control whether you
-      sign in, manage available advertising privacy choices, control device permissions,
-      or delete local or account-related information using the controls provided by
-      Element Burst, Google, or your operating system.
-    </p>
+      <section>
+        <h2>Permissions and Network Access</h2>
+        <p>
+          Element Burst requests only the permissions necessary for its active features:
+        </p>
+        <ul>
+          <li>
+            <strong>Network Access (<code>android.permission.INTERNET</code>, <code>android.permission.ACCESS_NETWORK_STATE</code>):</strong> Required for online features such as Firebase authentication, cloud leaderboards, telemetry, and advertising.
+          </li>
+          <li>
+            <strong>Haptic Feedback (<code>android.permission.VIBRATE</code>):</strong> Provides tactile feedback during gameplay interactions.
+          </li>
+        </ul>
+      </section>
 
-    <h2>Children's Privacy</h2>
-    <p>
-      Element Burst is not intended to knowingly collect personal information from
-      children in violation of applicable law. If JRP Apps becomes aware that personal
-      information has been collected from a child in a manner requiring parental
-      consent and such consent was not obtained, reasonable steps will be taken to
-      delete the information as required.
-    </p>
+      <section>
+        <h2>Data Security</h2>
+        <p>
+          Element Burst utilizes the security mechanisms provided by Android, Google Firebase, and HTTPS encryption for information transmitted to and from online services.
+        </p>
+        <p>
+          While robust technical safeguards are implemented, no method of electronic storage or internet transmission is 100% secure. You are encouraged to maintain the security of your device and credentials.
+        </p>
+      </section>
 
-    <h2>Third-Party Services</h2>
-    <p>
-      Depending on the enabled features and platform, Element Burst may use Google
-      services including Firebase Authentication, Cloud Firestore, Google AdMob,
-      Google Play services, and related Firebase or Google infrastructure. These
-      providers may process technical, authentication, account, advertising, analytics,
-      or service-usage information according to their own terms and privacy policies.
-    </p>
-    <p>
-      Google privacy information:
-      <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a> ·
-      <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase Privacy and Security</a> ·
-      <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer">How Google uses information from apps that use Google services</a>
-    </p>
+      <section>
+        <h2>Data Retention and Deletion</h2>
+        <p>
+          Local game data remains on your device until cleared in device settings or removed by uninstalling the application.
+        </p>
+        <p>
+          Cloud-hosted account data, statistics, and ranking records are retained for as long as needed to support game services, maintain leaderboard integrity, and fulfill operational or legal requirements. Where in-app account deletion is available, requests will remove or schedule removal of user-owned account records.
+        </p>
+      </section>
 
-    <h2>International Data Processing</h2>
-    <p>
-      Third-party providers such as Google may process authentication, analytics,
-      advertising, telemetry, or cloud-hosted information in countries where they or
-      their service providers operate. Their processing is governed by their applicable
-      terms, privacy policies, and data-protection commitments.
-    </p>
+      <section>
+        <h2>Children's Privacy</h2>
+        <p>
+          Element Burst is not directed toward children under applicable age thresholds and does not knowingly collect personal information from children without appropriate parental consent.
+        </p>
+      </section>
 
-    <h2>Changes to This Privacy Policy</h2>
-    <p>
-      This Privacy Policy may be updated when Element Burst adds, removes, or changes
-      account features, statistics, rankings, telemetry, advertising, permissions,
-      administrative analytics, or third-party services. The updated policy will be
-      published on this page with a revised "Last Updated" date.
-    </p>
+      <section>
+        <h2>Third-Party Services and Links</h2>
+        <p>
+          Depending on enabled features, Element Burst interacts with trusted third-party providers:
+        </p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy Policy</a></li>
+          <li><a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">Firebase Privacy & Security</a></li>
+          <li><a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer" target="_blank">How Google uses information from sites and apps</a></li>
+        </ul>
+      </section>
 
-    <h2>Contact</h2>
-    <p>
-      Developer: JRP Apps<br />
-      Email: <a href="mailto:support@jrphub.com">support@jrphub.com</a>
-    </p>
+      <section>
+        <h2>Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect game updates or regulatory requirements. Any revisions will be published on this page with an updated "Last updated" date.
+        </p>
+      </section>
 
-    <p class="last-updated">Site page reviewed: August 23, 2026</p>
+      <section>
+        <h2>Contact Us</h2>
+        <p>
+          If you have questions or feedback regarding this Privacy Policy or Element Burst, please contact <strong>JRP Apps</strong>:
+        </p>
+        <p>
+          Email: <a href="mailto:support@jrphub.com">support@jrphub.com</a>
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <div class="contact">
+        <span>© 2026 JRP Apps</span>
+        <span>•</span>
+        <span>Element Burst</span>
+        <span>•</span>
+        <a href="./">All Privacy Policies</a>
+        <span>•</span>
+        <a href="../sitemap.html">HTML Sitemap</a>
+        <span>•</span>
+        <a href="../">Home</a>
+      </div>
+    </footer>
   </main>
-
-  <footer class="policy-footer">
-    <p>
-      <a href="../">JRP Apps home</a> ·
-      <a href="../apps/elementburst/">App overview</a> ·
-      <a href="./">All privacy policies</a> ·
-      <a href="../sitemap.html">HTML sitemap</a> ·
-      <a href="mailto:support@jrphub.com">Contact</a> ·
-      <a href="https://jrphub.com/">JRP Industries</a>
-    </p>
-  </footer>
 </body>
 </html>

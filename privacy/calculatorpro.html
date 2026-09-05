@@ -1,494 +1,472 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Read the Calculator Pro privacy policy, including information about local data storage, permissions, advertising, Google services, cloud backup, consent management, and optional online features." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="canonical" href="https://apps.jrphub.com/privacy/calculatorpro.html" />
+  <title>Calculator Pro Privacy Policy | JRP Apps</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png"/>
+<link rel="icon" type="image/png" href="../assets/images/jrplogo.png"/>
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png"/>
 
-<title>Calculator Pro Privacy Policy | JRP Apps</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #687086;
+      --accent: #059669;
+      --accent-soft: #d1fae5;
+      --border: #e7eaf0;
+      --shadow: 0 18px 50px rgba(24, 32, 51, 0.08);
+    }
 
-<meta
-    name="description"
-    content="Read the Calculator Pro privacy policy, including information about local data storage, permissions, advertising, Google services, cloud backup, consent management, and optional online features."
->
-
-<meta
-    name="robots"
-    content="index, follow, max-image-preview:large"
->
-
-<meta
-    name="theme-color"
-    content="#ffffff"
->
-
-<link
-    rel="canonical"
-    href="https://apps.jrphub.com/privacy/calculatorpro.html"
->
-
-<meta
-    property="og:title"
-    content="Calculator Pro Privacy Policy"
->
-
-<meta
-    property="og:description"
-    content="Learn how Calculator Pro handles local app data, permissions, advertising, cloud backup, consent, and third-party services."
->
-
-<meta
-    property="og:type"
-    content="website"
->
-
-<meta
-    property="og:url"
-    content="https://apps.jrphub.com/privacy/calculatorpro.html"
->
-
-<meta
-    property="og:site_name"
-    content="JRP Apps"
->
-
-<meta
-    name="twitter:card"
-    content="summary"
->
-
-<meta
-    name="twitter:title"
-    content="Calculator Pro Privacy Policy"
->
-
-<meta
-    name="twitter:description"
-    content="Learn how Calculator Pro handles local app data, advertising, cloud backup, consent, and third-party services."
->
-
-<style>
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
+    * {
+      box-sizing: border-box;
     }
 
     html {
-        scroll-behavior: smooth;
+      scroll-behavior: smooth;
     }
 
     body {
-        max-width: 900px;
-        margin: 40px auto;
-        padding: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        line-height: 1.7;
-        color: #333333;
-        background-color: #ffffff;
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(91, 92, 226, 0.10), transparent 34%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.75;
     }
 
-    h1,
-    h2 {
-        color: #1f4e79;
-        line-height: 1.3;
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 30px 20px 34px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 22.5% !important;
+      overflow: hidden !important;
+      display: block;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 22.5% !important;
+      overflow: hidden !important;
+      overflow: hidden;
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: white;
+      font-weight: 800;
+      box-shadow: 0 10px 24px rgba(79, 70, 229, 0.25);
     }
 
     h1 {
-        margin-top: 0;
-        font-size: 2.2rem;
+      margin: 0;
+      font-size: clamp(34px, 6vw, 52px);
+      line-height: 1.08;
+      letter-spacing: -1.3px;
+    }
+
+    .subtitle {
+      max-width: 660px;
+      margin: 16px auto 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .updated {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #065f46;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .intro {
+      padding: 30px 34px 12px;
+    }
+
+    .highlight {
+      margin: 0 0 24px;
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #f8f9ff, #f8fafc);
+      border: 1px solid #e2e8f0;
+    }
+
+    .highlight strong {
+      color: #065f46;
+    }
+
+    section {
+      padding: 6px 34px 28px;
+    }
+
+    section + section {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
     }
 
     h2 {
-        margin-top: 32px;
-        margin-bottom: 12px;
-        font-size: 1.45rem;
+      margin: 0 0 10px;
+      font-size: 21px;
+      letter-spacing: -0.35px;
     }
 
     p {
-        margin-top: 0;
-        margin-bottom: 16px;
+      margin: 0;
+      color: #3e475c;
+    }
+
+    p + p {
+      margin-top: 10px;
     }
 
     ul {
-        margin-top: 8px;
-        margin-bottom: 20px;
-        padding-left: 28px;
+      margin: 10px 0 0;
+      padding-left: 20px;
+      color: #3e475c;
     }
 
-    li {
-        margin-bottom: 8px;
+    li + li {
+      margin-top: 6px;
+    }
+
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 8px;
+      font-size: 13px;
+      color: #0f172a;
     }
 
     a {
-        color: #1f4e79;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
     }
 
-    a:hover,
-    a:focus {
-        text-decoration-thickness: 2px;
+    a:hover {
+      text-decoration: underline;
     }
 
-    hr {
-        margin: 30px 0;
-        border: 0;
-        border-top: 1px solid #dddddd;
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      padding-top: 26px;
     }
 
-    .policy-navigation {
-        margin-bottom: 28px;
-        padding-bottom: 16px;
-        border-bottom: 1px solid #dddddd;
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
-    .policy-navigation a,
-    .policy-footer a {
-        color: inherit;
-        font-weight: 700;
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding: 24px 0 38px;
+      }
+
+      .hero {
+        padding: 20px 12px 26px;
+      }
+
+      .intro,
+      section {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .card {
+        border-radius: 20px;
+      }
     }
+  </style>
 
-    .last-updated {
-        margin-top: 30px;
-        font-size: 14px;
-        color: #555555;
-    }
-
-    .policy-footer {
-        margin-top: 36px;
-        padding-top: 18px;
-        border-top: 1px solid #dddddd;
-        font-size: 14px;
-    }
-
-    .policy-footer p {
-        margin-bottom: 0;
-    }
-
-    @media (max-width: 600px) {
-        body {
-            margin: 0 auto;
-            padding: 20px 16px;
-        }
-
-        h1 {
-            font-size: 1.85rem;
-        }
-
-        h2 {
-            font-size: 1.3rem;
-        }
-    }
-
-    @media (prefers-color-scheme: dark) {
-        body {
-            color: #e8e8e8;
-            background-color: #121212;
-        }
-
-        h1,
-        h2,
-        a {
-            color: #8ec5ff;
-        }
-
-        .policy-navigation,
-        .policy-footer {
-            border-color: #444444;
-        }
-
-        hr {
-            border-top-color: #444444;
-        }
-
-        .last-updated {
-            color: #bbbbbb;
-        }
-    }
-</style>
-
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+  <script type="application/ld+json" data-schema="breadcrumb">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
         {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://apps.jrphub.com/"
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://apps.jrphub.com/"
         },
         {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Privacy Policies",
-            "item": "https://apps.jrphub.com/privacy/"
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Privacy Policies",
+          "item": "https://apps.jrphub.com/privacy/"
         },
         {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Calculator Pro Privacy Policy",
-            "item": "https://apps.jrphub.com/privacy/calculatorpro.html"
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Calculator Pro Privacy Policy",
+          "item": "https://apps.jrphub.com/privacy/calculatorpro.html"
         }
-    ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Calculator Pro Privacy Policy",
-    "description": "Privacy policy for the Calculator Pro application developed by JRP Apps.",
-    "url": "https://apps.jrphub.com/privacy/calculatorpro.html",
-    "dateModified": "2026-08-15",
-    "publisher": {
-        "@type": "Organization",
-        "name": "JRP Apps",
-        "url": "https://apps.jrphub.com/"
+      ]
     }
-}
-</script>
-
-
+  </script>
 </head>
 
 <body>
-    <nav
-        class="policy-navigation"
-        aria-label="Privacy policy navigation"
-    >
-        <a href="./">← All privacy policies</a>
-        ·
-        <a href="../apps/calculator/">Calculator Pro overview</a>
-        ·
-        <a href="../sitemap.html">HTML sitemap</a>
-    </nav>
+  <main class="page">
+    <header class="hero">
+      <div class="brand">
+        <span class="brand-mark"><img src="../assets/app-icons/calculator.png" alt="App icon" width="34" height="34" /></span>
+        <span>Calculator Pro</span>
+      </div>
 
+      <h1>Privacy Policy</h1>
 
-<main>
-    <h1>Privacy Policy</h1>
+      <p class="subtitle">
+        Calculator Pro provides everyday calculations, scientific functions, history, unit tools, and optional cloud backup for Android.
+      </p>
 
-    <p>
-        <strong>Last Updated:</strong>
-        August 15, 2026
-    </p>
+      <span class="updated">Last updated: August 15, 2026</span>
+    </header>
 
-    <p>
-        Calculator Pro ("the App") is developed by
-        <strong>JRP Apps</strong>.
-    </p>
+    <article class="card">
+      <div class="intro">
+        <div class="highlight">
+          <strong>Your privacy is protected.</strong>
+          Calculator Pro is built with a local-first philosophy. Your calculations and history remain on your device unless you explicitly enable optional cloud synchronization.
+        </div>
+      </div>
 
-    <p>
-        Your privacy is important to us. This Privacy Policy explains how
+      <section>
+        <h2>Overview</h2>
+        <p>Your privacy is important to us. This Privacy Policy explains how
         the App handles information and how third-party services used by
-        the App may process certain data.
-    </p>
+        the App may process certain data.</p>
+      </section>
 
-    <hr>
-
-    <h2>Information Collection</h2>
-
-    <p>
+      <section>
+        <h2>Information Collection</h2>
+        <p>
         Calculator Pro does not require you to create an account to use its
         core calculator features. JRP Apps does not intentionally collect
         personal information such as your name, phone number, contacts,
         photos, microphone recordings, camera recordings, or precise
         location through the App's core functionality.
-    </p>
-
-    <p>
+        </p>
+        <p>
         Calculations, calculation history, preferences, settings, and most
         other app data are stored locally on your device.
-    </p>
-
-    <p>
+        </p>
+        <p>
         If you choose to use an optional cloud-based feature, such as Cloud
         Backup, you may be asked to sign in with your Google account.
         Information required to provide authentication, synchronization,
         backup, restoration, or related cloud functionality may be
         processed by the relevant Google services.
-    </p>
+        </p>
+      </section>
 
-    <h2>Google Sign-In and Optional Cloud Backup</h2>
-
-    <p>
+      <section>
+        <h2>Google Sign-In and Optional Cloud Backup</h2>
+        <p>
         Calculator Pro may offer optional Google Sign-In and Cloud Backup
         functionality. These features are disabled by default and are not
         required to use the App's core calculator functionality. Google
         Sign-In is never required to use Calculator Pro's calculator
         features.
-    </p>
-
-    <p>
+        </p>
+        <p>
         If you choose to sign in, Google and Firebase services may process
         information associated with authentication, such as your Google
         account identifier, authentication credentials or tokens, and
         information necessary to connect your account with the optional
         cloud feature.
-    </p>
-
-    <p>
+        </p>
+        <p>
         App information selected or required for cloud backup may be
         transmitted to and stored using the relevant cloud service. Cloud
         data is governed by the applicable service provider's privacy
         policy, security practices, and retention terms.
-    </p>
+        </p>
+      </section>
 
-    <h2>Permissions</h2>
-
-    <p>
+      <section>
+        <h2>Permissions</h2>
+        <p>
         The App does not request access to your contacts, camera,
         microphone, precise location, or photos for its core calculator
         functionality.
-    </p>
-
-    <p>
+        </p>
+        <p>
         The App may use internet access, network-state access, advertising
         identifiers, notification-related access where applicable, and
         other permissions required to:
-    </p>
-
-    <ul>
+        </p>
+        <ul>
         <li>Load and display advertisements</li>
         <li>Manage privacy and advertising consent</li>
         <li>Use optional online or cloud-based features</li>
         <li>Retrieve exchange-rate information</li>
         <li>Provide support and diagnostic functionality</li>
-    </ul>
-
-    <p>
+        </ul>
+        <p>
         The exact permissions available may vary depending on the App
         version, Android version, device capabilities, region, and enabled
         features.
-    </p>
+        </p>
+      </section>
 
-    <h2>Internet Connection</h2>
-
-    <p>
+      <section>
+        <h2>Internet Connection</h2>
+        <p>
         The App's core calculator functionality works without an internet
         connection.
-    </p>
-
-    <p>An internet connection may be required for:</p>
-
-    <ul>
+        </p>
+        <p>An internet connection may be required for:</p>
+        <ul>
         <li>Loading advertisements</li>
         <li>Managing privacy and advertising consent</li>
         <li>Using optional Google Sign-In and Cloud Backup</li>
         <li>
-            Retrieving current exchange-rate information for the optional
-            Currency Converter
+        Retrieving current exchange-rate information for the optional
+        Currency Converter
         </li>
         <li>
-            Submitting an optional support report or diagnostic information
+        Submitting an optional support report or diagnostic information
         </li>
         <li>
-            Accessing external support, privacy, developer, or Google
-            service pages
+        Accessing external support, privacy, developer, or Google
+        service pages
         </li>
-    </ul>
+        </ul>
+      </section>
 
-    <h2>Currency Converter</h2>
-
-    <p>
+      <section>
+        <h2>Currency Converter</h2>
+        <p>
         The App may include an optional Currency Converter that connects to
         an external exchange-rate service to retrieve current or recently
         available currency information.
-    </p>
-
-    <p>
+        </p>
+        <p>
         When this feature is used, the external service may receive
         technical request information such as your IP address, request
         time, selected currencies, device or browser information, and
         network-related information necessary to process the request.
-    </p>
-
-    <p>
+        </p>
+        <p>
         Exchange rates are provided for informational purposes and may be
         delayed, estimated, unavailable, or different from rates offered
         by banks, payment providers, exchanges, or financial institutions.
-    </p>
+        </p>
+      </section>
 
-    <h2>Support Reports and Diagnostics</h2>
-
-    <p>
+      <section>
+        <h2>Support Reports and Diagnostics</h2>
+        <p>
         The App may allow you to voluntarily prepare a support report. When
         you use this feature, Calculator Pro may create an email draft in
         your chosen email application containing the description you provide
         and technical information used to investigate the issue. The report
         is sent only if you choose to send that email. Calculator Pro does
         not silently send the support report in the background.
-    </p>
-
-    <p>Technical information may include:</p>
-
-    <ul>
+        </p>
+        <p>Technical information may include:</p>
+        <ul>
         <li>App version and build information</li>
         <li>Device model and operating-system information</li>
         <li>Feature status and app configuration</li>
         <li>Network availability information</li>
         <li>Diagnostic messages, error details, or recent app logs</li>
         <li>Advertising or service-readiness information</li>
-    </ul>
-
-    <p>
+        </ul>
+        <p>
         Support information is used to investigate reported problems,
         improve reliability, communicate with you when contact information
         is provided, and protect the App from misuse.
-    </p>
+        </p>
+      </section>
 
-    <h2>Third-Party Services</h2>
-
-    <p>
+      <section>
+        <h2>Third-Party Services</h2>
+        <p>
         The App may use trusted third-party services, including:
-    </p>
-
-    <ul>
+        </p>
+        <ul>
         <li>
-            <strong>Google AdMob</strong>
-            to load, display, measure, and manage advertisements
+        <strong>Google AdMob</strong>
+        to load, display, measure, and manage advertisements
         </li>
-
         <li>
-            <strong>Google User Messaging Platform (UMP)</strong>
-            to request and manage advertising consent where required
+        <strong>Google User Messaging Platform (UMP)</strong>
+        to request and manage advertising consent where required
         </li>
-
         <li>
-            <strong>Google Sign-In</strong>
-            to provide optional account authentication
+        <strong>Google Sign-In</strong>
+        to provide optional account authentication
         </li>
-
         <li>
-            <strong>Google Firebase services</strong>
-            to support optional authentication, cloud functionality,
-            diagnostics, support reporting, reliability, or related app
-            features where enabled
+        <strong>Google Firebase services</strong>
+        to support optional authentication, cloud functionality,
+        diagnostics, support reporting, reliability, or related app
+        features where enabled
         </li>
-
         <li>
-            <strong>Exchange-rate service providers</strong>
-            to provide information used by the optional Currency Converter
+        <strong>Exchange-rate service providers</strong>
+        to provide information used by the optional Currency Converter
         </li>
-
         <li>
-            <strong>Google Play services</strong>
-            to support Android platform functionality, app distribution,
-            security, and service integration
+        <strong>Google Play services</strong>
+        to support Android platform functionality, app distribution,
+        security, and service integration
         </li>
-    </ul>
-
-    <p>
+        </ul>
+        <p>
         Depending on the feature used, your region, your consent choices,
         device settings, and applicable law, these third-party services may
         automatically process information such as:
-    </p>
-
-    <ul>
+        </p>
+        <ul>
         <li>IP address</li>
         <li>Device and app identifiers</li>
         <li>Advertising identifiers</li>
@@ -497,64 +475,59 @@
         <li>Diagnostic, performance, and crash information</li>
         <li>Device model, operating system, language, and region</li>
         <li>Authentication and account-related identifiers</li>
-    </ul>
-
-    <p>
+        </ul>
+        <p>
         Data processed by third-party services is governed by their
         respective privacy policies, terms, retention rules, and security
         practices.
-    </p>
+        </p>
+      </section>
 
-    <h2>Advertising</h2>
-
-    <p>
+      <section>
+        <h2>Advertising</h2>
+        <p>
         The App displays advertisements through Google AdMob.
-    </p>
-
-    <p>
+        </p>
+        <p>
         AdMob and its advertising partners may process device identifiers,
         advertising identifiers, IP addresses, approximate location,
         advertising interactions, app interactions, diagnostic
         information, and related technical data to load, limit, secure,
         measure, and report advertisements.
-    </p>
-
-    <p>
+        </p>
+        <p>
         Calculator Pro uses Google's User Messaging Platform (UMP) to
         request and manage advertising consent where required. The App
         requests ads only when the Google Mobile Ads consent state indicates
         that ad requests are allowed.
-    </p>
-
-    <p>
+        </p>
+        <p>
         Depending on your region, consent choices, device or Google account
         settings, and applicable privacy signals, Google Mobile Ads may
         serve personalized, non-personalized, or limited ads. Calculator Pro
         does not globally force all ad requests into a single
         personalization mode.
-    </p>
-
-    <p>
+        </p>
+        <p>
         Where required, the App presents a consent or privacy-options message
         before or in connection with certain advertising processing. You may
         be able to review or change relevant consent choices through the App,
         your device settings, your Google account settings, or the relevant
         Google privacy controls.
-    </p>
+        </p>
+      </section>
 
-    <h2>Data Sharing</h2>
-
-    <p>
+      <section>
+        <h2>Data Sharing</h2>
+        <p>
         JRP Apps does not sell your personal information.
-    </p>
-
-    <p>
+        </p>
+        <p>
         Limited information may be processed by or shared with trusted
         third-party service providers only when reasonably necessary to
         provide:
-    </p>
-
-    <ul>
+        </p>
+        <ul>
         <li>Advertising and advertising measurement</li>
         <li>Privacy and consent management</li>
         <li>Authentication and optional cloud backup</li>
@@ -562,72 +535,69 @@
         <li>Support-report processing</li>
         <li>Diagnostics, security, and reliability</li>
         <li>Other requested online app functionality</li>
-    </ul>
-
-    <p>
+        </ul>
+        <p>
         Information may also be disclosed where required by law, legal
         process, regulation, or a valid request from a competent authority,
         or where reasonably necessary to protect users, JRP Apps, the App,
         or the public from fraud, abuse, security threats, or unlawful
         activity.
-    </p>
+        </p>
+      </section>
 
-    <h2>Data Retention and Control</h2>
-
-    <p>
+      <section>
+        <h2>Data Retention and Control</h2>
+        <p>
         Locally stored app data remains on your device until you delete it
         through the App, clear the App's storage, reset the relevant
         feature, or uninstall the App.
-    </p>
-
-    <p>
+        </p>
+        <p>
         Data stored using optional Cloud Backup may remain associated with
         the relevant Google account or cloud service until it is deleted,
         replaced, expired, or otherwise handled according to the applicable
         service provider's retention practices.
-    </p>
-
-    <p>
+        </p>
+        <p>
         Support-report information may be retained for as long as
         reasonably necessary to investigate the report, provide support,
         maintain security, resolve disputes, improve the App, and meet
         applicable legal obligations.
-    </p>
-
-    <p>
+        </p>
+        <p>
         Controls relating to advertising personalization, consent,
         identifiers, permissions, and Google account information may also
         be available through the App, your device settings, your Google
         account settings, or the relevant service provider.
-    </p>
+        </p>
+      </section>
 
-    <h2>Account and Cloud Data Requests</h2>
-
-    <p>
+      <section>
+        <h2>Account and Cloud Data Requests</h2>
+        <p>
         Where supported, you may use the App to delete your cloud backup and
         the associated cloud account data. You may also sign out at any time.
         Deleting cloud data does not automatically delete data stored locally
         on your device unless the App clearly states otherwise.
-    </p>
-
-    <p>
+        </p>
+        <p>
         You may also contact JRP Apps using the email address below if you
         need assistance regarding information submitted directly to JRP
         Apps. Some authentication, advertising, platform, or cloud
         information is controlled independently by Google or another
         service provider and may need to be managed through that provider.
-    </p>
+        </p>
+      </section>
 
-    <h2>Intended Audience</h2>
-
-    <p>
+      <section>
+        <h2>Intended Audience</h2>
+        <p>
         Calculator Pro is intended for users aged 13 years and older,
         including students, educators, professionals, and general users.
         The App is not specifically directed toward children under the age
         of 13.
-    </p>
-
-    <p>
+        </p>
+        <p>
         Calculator Pro does not ask for, collect, or infer a user's age for
         advertising age-treatment decisions. Accordingly, the App does not
         independently classify every user as being above or below the
@@ -635,108 +605,101 @@
         treatment may also depend on your region, choices, device or Google
         account settings, applicable privacy signals, and the rules applied
         by the relevant third-party service.
-    </p>
-
-    <p>
+        </p>
+        <p>
         JRP Apps does not knowingly request or directly collect personal
         information from children under 13 through the App's core calculator
         functionality. If you believe that a child under 13 has provided
         personal information directly to JRP Apps, please contact us using
         the details below so that we can review the matter and take
         appropriate action.
-    </p>
+        </p>
+      </section>
 
-    <h2>External Links</h2>
-
-    <p>
+      <section>
+        <h2>External Links</h2>
+        <p>
         The App may open external websites or services, including support
         pages, privacy pages, developer pages, Google services, advertising
         pages, or other third-party content.
-    </p>
-
-    <p>
+        </p>
+        <p>
         JRP Apps does not control the privacy practices, content, security,
         or availability of third-party websites and services. Their use is
         governed by their respective policies and terms.
-    </p>
+        </p>
+      </section>
 
-    <h2>Security</h2>
-
-    <p>
+      <section>
+        <h2>Security</h2>
+        <p>
         JRP Apps takes reasonable administrative and technical steps to
         protect information handled directly by the App. Third-party
         providers may also apply their own security measures to information
         they process.
-    </p>
-
-    <p>
+        </p>
+        <p>
         However, no method of electronic storage, software processing, or
         internet transmission is completely secure, and absolute security
         cannot be guaranteed.
-    </p>
+        </p>
+      </section>
 
-    <h2>International Processing</h2>
-
-    <p>
+      <section>
+        <h2>International Processing</h2>
+        <p>
         Third-party providers used by the App may process information on
         servers located outside your country or region. Where this occurs,
         information is handled according to the provider's applicable
         privacy policy, contractual safeguards, and legal obligations.
-    </p>
+        </p>
+      </section>
 
-    <h2>Changes to This Privacy Policy</h2>
-
-    <p>
+      <section>
+        <h2>Changes to This Privacy Policy</h2>
+        <p>
         This Privacy Policy may be updated from time to time to reflect
         changes in the App, third-party services, legal requirements,
         security practices, or data-handling practices.
-    </p>
-
-    <p>
+        </p>
+        <p>
         Updates will be posted on this page with a revised
         "Last Updated" date. You should review this page periodically for
         changes.
-    </p>
+        </p>
+      </section>
 
-    <h2>Contact Us</h2>
-
-    <p>
+      <section>
+        <h2>Contact Us</h2>
+        <p>
         If you have questions, concerns, or requests regarding this Privacy
         Policy, you may contact us at:
-    </p>
-
-    <p>
+        </p>
+        <p>
         <strong>Developer:</strong>
         JRP Apps
         <br>
-
         <strong>Email:</strong>
         <a href="mailto:support@jrphub.com">
-            support@jrphub.com
+        support@jrphub.com
         </a>
-    </p>
+        </p>
+      </section>
+    </article>
 
-    <p class="last-updated">
-        Site page reviewed: August 15, 2026
-    </p>
-</main>
-
-<footer class="policy-footer">
-    <p>
-        <a href="../">JRP Apps home</a>
-        ·
-        <a href="../apps/calculator/">App overview</a>
-        ·
-        <a href="./">All privacy policies</a>
-        ·
-        <a href="../sitemap.html">HTML sitemap</a>
-        ·
-        <a href="mailto:support@jrphub.com">Contact</a>
-        ·
-        <a href="https://jrphub.com/">JRP Industries</a>
-    </p>
-</footer>
-
-
+    <footer>
+      <div class="contact">
+        <span>© 2026 JRP Apps</span>
+        <span>•</span>
+        <span>Calculator Pro</span>
+        <span>•</span>
+        <a href="./">All Privacy Policies</a>
+        <span>•</span>
+        <a href="../sitemap.html">HTML Sitemap</a>
+        <span>•</span>
+        <a href="../">Home</a>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
