@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Read the Voice Mate privacy policy covering on-device audio recording, local storage, microphone permissions, zero telemetry, and user data security."/>
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="canonical" href="https://apps.jrphub.com/privacy/voicemate.html" />
+  <meta property="og:title" content="Voice Mate Privacy Policy | JRP Apps"/>
+  <meta property="og:description" content="Read the Voice Mate privacy policy covering on-device audio recording, local storage, microphone permissions, zero telemetry, and user data security."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://apps.jrphub.com/privacy/voicemate.html"/>
+  <meta property="og:site_name" content="JRP Apps"/>
+  <meta property="og:image" content="https://apps.jrphub.com/assets/app-icons/voicemate.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Voice Mate Privacy Policy | JRP Apps"/>
+  <meta name="twitter:description" content="Read the Voice Mate privacy policy covering on-device audio recording, local storage, microphone permissions, zero telemetry, and user data security."/>
+  <meta name="twitter:image" content="https://apps.jrphub.com/assets/app-icons/voicemate.png"/>
+  <title>Voice Mate Privacy Policy | JRP Apps</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png"/>
+  <link rel="icon" type="image/png" href="../assets/images/jrplogo.png"/>
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png"/>
+
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #687086;
+      --accent: #e11d48;
+      --accent-soft: #ffe4e6;
+      --border: #e7eaf0;
+      --shadow: 0 18px 50px rgba(24, 32, 51, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(225, 29, 72, 0.08), transparent 34%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 30px 20px 34px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 22.5% !important;
+      overflow: hidden !important;
+      display: block;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 22.5% !important;
+      overflow: hidden !important;
+      background: linear-gradient(135deg, #f43f5e, #e11d48);
+      color: white;
+      font-weight: 800;
+      box-shadow: 0 10px 24px rgba(225, 29, 72, 0.25);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 52px);
+      line-height: 1.08;
+      letter-spacing: -1.3px;
+    }
+
+    .subtitle {
+      max-width: 660px;
+      margin: 16px auto 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .updated {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #9f1239;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .intro {
+      padding: 30px 34px 12px;
+    }
+
+    .highlight {
+      margin: 0 0 24px;
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #fff1f2, #fff7ed);
+      border: 1px solid #fecdd3;
+    }
+
+    .highlight strong {
+      color: #9f1239;
+    }
+
+    section {
+      padding: 6px 34px 28px;
+    }
+
+    section + section {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 21px;
+      letter-spacing: -0.35px;
+    }
+
+    p {
+      margin: 0;
+      color: #3e475c;
+    }
+
+    p + p {
+      margin-top: 10px;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+      color: #3e475c;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 8px;
+      font-size: 13px;
+      color: #0f172a;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      padding-top: 26px;
+    }
+
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding: 24px 0 38px;
+      }
+
+      .hero {
+        padding: 20px 12px 26px;
+      }
+
+      .intro,
+      section {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .card {
+        border-radius: 20px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json" data-schema="breadcrumb">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://apps.jrphub.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Privacy Policies",
+          "item": "https://apps.jrphub.com/privacy/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Voice Mate Privacy Policy",
+          "item": "https://apps.jrphub.com/privacy/voicemate.html"
+        }
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="brand">
+        <span class="brand-mark"><img src="../assets/app-icons/voicemate.png" alt="App icon" width="34" height="34" /></span>
+        <span>Voice Mate</span>
+      </div>
+
+      <h1>Privacy Policy</h1>
+
+      <p class="subtitle">
+        Voice Mate is a private, local-first voice recording companion for capturing audio notes, lectures, interviews, and ideas on Android and Web.
+      </p>
+
+      <span class="updated">Last updated: September 15, 2026</span>
+    </header>
+
+    <article class="card">
+      <div class="intro">
+        <div class="highlight">
+          <strong>Your voice recordings belong entirely to you.</strong>
+          Voice Mate operates on a 100% local-first architecture. All captured audio, waveforms, folder categories, and metadata are saved strictly on your local device or browser CacheStorage. No account is required, no background servers are used, and no telemetry or audio is ever uploaded to the cloud.
+        </div>
+      </div>
+
+      <section>
+        <h2>Overview</h2>
+        <p>
+          Voice Mate is developed by JRP Apps as a privacy-focused utility designed to provide users with a secure, confidential environment for recording personal voice notes, lectures, meetings, and thoughts.
+        </p>
+        <p>
+          We believe that voice memos can contain sensitive, confidential, or proprietary information. Accordingly, Voice Mate does not implement any user accounts, advertising SDKs, cloud synchronization, or remote database services. All data handling occurs on your device.
+        </p>
+      </section>
+
+      <section>
+        <h2>Audio Recordings and Local Data Storage</h2>
+        <p>
+          When you record audio using Voice Mate, the generated audio files (such as <code>.m4a</code> or <code>.webm</code> formats) and associated metadata (recording title, duration, timestamp, folder assignments, and favorite status) are stored exclusively on your device's internal storage or, in web environments, within your browser's private CacheStorage.
+        </p>
+        <p>
+          JRP Apps does not maintain servers that receive, index, transcribe, or back up your recordings. Your audio files never leave your device unless you explicitly choose to export or share them through standard operating system sharing features.
+        </p>
+      </section>
+
+      <section>
+        <h2>Microphone and Hardware Permissions</h2>
+        <p>
+          To perform its core recording function, Voice Mate requires permission to access your device's microphone:
+        </p>
+        <ul>
+          <li><strong>Microphone Permission (<code>android.permission.RECORD_AUDIO</code>): </strong>Requested solely to capture audio when you tap the Record button. Microphone access is strictly active during an ongoing recording session and immediately terminates when you pause, stop, or cancel recording.</li>
+          <li><strong>No Background Audio Access: </strong>Voice Mate never activates the microphone without explicit user action and does not monitor ambient audio in the background.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Storage and File System Access</h2>
+        <p>
+          Depending on your operating system version and feature usage, Voice Mate may use storage permissions or system file picker dialogs:
+        </p>
+        <ul>
+          <li><strong>Local Audio Storage: </strong>Used to write recording files to your app-specific storage directory and retrieve them for on-device playback.</li>
+          <li><strong>File Export &amp; Sharing: </strong>When you select an audio note to share or export, Voice Mate passes the file directly to your device's native system share sheet or download provider. The app does not access other private media or documents on your device.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>No Account Required &amp; No Personal Data Collection</h2>
+        <p>
+          You do not need to register, log in, or provide an email address, phone number, or social media profile to use Voice Mate. The app does not collect personal identifiers, device serial numbers, contacts, or location data.
+        </p>
+      </section>
+
+      <section>
+        <h2>Zero Third-Party Telemetry and Analytics</h2>
+        <p>
+          Voice Mate contains no third-party tracking frameworks, crash-reporting trackers, or analytics SDKs (such as Firebase Analytics, Google Analytics, or Facebook SDK). We do not track what you record, how many recordings you make, how often you use the app, or what folders you create.
+        </p>
+      </section>
+
+      <section>
+        <h2>Advertising Practices</h2>
+        <p>
+          Voice Mate does not serve third-party banner ads, interstitial ads, or tracking ads. Your recording workflow is completely ad-free and undisturbed.
+        </p>
+      </section>
+
+      <section>
+        <h2>User-Initiated Sharing and Exports</h2>
+        <p>
+          You retain complete ownership of your audio files. If you choose to export or share a recording via messaging apps, email, cloud drives, or Bluetooth, the file transfer is handled entirely by your operating system and the third-party application you select. JRP Apps is not involved in that transmission.
+        </p>
+      </section>
+
+      <section>
+        <h2>Data Retention and Deletion</h2>
+        <p>
+          Your recordings and metadata remain on your device for as long as you choose to keep them:
+        </p>
+        <ul>
+          <li><strong>Manual Deletion: </strong>When you delete a recording within Voice Mate, the audio file and its metadata are permanently removed from your device storage immediately.</li>
+          <li><strong>App Uninstall / Data Clear: </strong>Clearing app storage in Android Settings or uninstalling the app permanently erases all internal recordings and configurations.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Data Security</h2>
+        <p>
+          Because all audio and metadata are stored locally, the primary security of your recordings relies on your device's built-in security features, such as your screen lock, biometric authentication, and device-level encryption. We encourage you to use device-level security to protect your sensitive recordings.
+        </p>
+      </section>
+
+      <section>
+        <h2>Children’s Privacy</h2>
+        <p>
+          Voice Mate is a general utility app designed for all audiences. Because it does not collect, transmit, or store any personal information on remote servers, it complies with the requirements of children's privacy regulations including COPPA.
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy periodically if we introduce new features or if regulatory requirements change. Any updates will be published on this page with an updated "Last updated" date.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact Us</h2>
+        <p>
+          If you have questions, feedback, or inquiries regarding this Privacy Policy or Voice Mate, please reach out to us:
+        </p>
+        <p>
+          Developer: <strong>JRP Apps</strong><br />
+          Email: <a href="mailto:support@jrphub.com?subject=Voice%20Mate%20Privacy%20Inquiry">support@jrphub.com</a><br />
+          Parent Organization: <a href="https://jrphub.com/" target="_blank" rel="noopener">JRP Industries</a>
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <div class="contact">
+        <span>© 2026 JRP Apps</span>
+        <span>•</span>
+        <span>Voice Mate</span>
+        <span>•</span>
+        <a href="./">All Privacy Policies</a>
+        <span>•</span>
+        <a href="../sitemap.html">HTML Sitemap</a>
+        <span>•</span>
+        <a href="../">Home</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
