@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>App Manager – Android App &amp; Storage Manager, APK Inspector | JRP Apps</title>
+<meta content="Inspect installed applications, analyze storage breakdown, check granted permissions, track screen time usage, and safely share APK packages offline with 100% on-device privacy." name="description"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="JRP Apps" name="author"/>
+<meta content="#07111f" name="theme-color"/>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png"/>
+<link rel="icon" type="image/png" href="../../assets/images/jrplogo.png"/>
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png"/>
+<link href="https://apps.jrphub.com/apps/appmanager/" rel="canonical"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="../../app-page.css?v=4.3.0" rel="stylesheet"/>
+<meta content="App Manager – Android App &amp; Storage Manager, APK Inspector | JRP Apps" property="og:title"/>
+<meta content="Inspect installed applications, analyze storage breakdown, check granted permissions, track screen time usage, and safely share APK packages offline with 100% on-device privacy." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://apps.jrphub.com/apps/appmanager/" property="og:url"/>
+<meta content="JRP Apps" property="og:site_name"/>
+<meta content="https://apps.jrphub.com/assets/app-icons/appmanager.png" property="og:image"/>
+<meta content="App Manager Android app by JRP Apps" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="App Manager – Android App &amp; Storage Manager, APK Inspector | JRP Apps" name="twitter:title"/>
+<meta content="Inspect installed applications, analyze storage breakdown, check granted permissions, track screen time usage, and safely share APK packages offline with 100% on-device privacy." name="twitter:description"/>
+<meta content="https://apps.jrphub.com/assets/app-icons/appmanager.png" name="twitter:image"/>
+<script data-schema="breadcrumb" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://apps.jrphub.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Apps", "item": "https://apps.jrphub.com/#apps"},
+    {"@type": "ListItem", "position": 3, "name": "App Manager", "item": "https://apps.jrphub.com/apps/appmanager/"}
+  ]
+}
+</script>
+<script data-schema="software-application" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "App Manager",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Android 10 to Android 16",
+  "description": "Inspect installed applications, analyze storage breakdown, check granted permissions, track screen time usage, and safely share APK packages offline with 100% on-device privacy.",
+  "url": "https://apps.jrphub.com/apps/appmanager/",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://apps.jrphub.com/#organization",
+    "name": "JRP Apps",
+    "url": "https://apps.jrphub.com/"
+  },
+  "image": "https://apps.jrphub.com/assets/app-icons/appmanager.png",
+  "dateModified": "2026-09-18",
+  "softwareRequirements": "Android 10 or later (up to Android 16)",
+  "inLanguage": "en"
+}
+</script>
+<script data-schema="faq" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is App Manager?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "App Manager is a clean, transparent, and private Android utility designed to give you complete visibility and control over installed applications, storage consumption, permissions, usage statistics, and APK packages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does App Manager collect or upload my app list or usage data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. App Manager operates 100% on-device. All package enumeration, storage calculations, and usage analytics occur strictly within your phone's memory. No telemetry, analytic SDKs, or cloud synchronization are present."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does App Manager require QUERY_ALL_PACKAGES permission?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The QUERY_ALL_PACKAGES permission is required on Android 11+ to discover installed user and system packages so the app can provide inventory listings, storage diagnostics, and permission audits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Usage Access and is it mandatory?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usage Access is an optional Android system permission that allows App Manager to calculate app foreground screen time and identify unused apps. The core inventory, storage inspection, and APK sharing features work without it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I share and inspect APK files without root?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. App Manager inspects APK metadata and shares base APK files using Android's secure sandboxed FileProvider API without needing root access or system modifications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Android versions are supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "App Manager supports Android 10 through the latest Android 16, with full compatibility across phone, foldable, and tablet form factors."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body class="app-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="app-shell">
+<header class="app-topbar">
+  <a aria-label="Back to JRP Apps home" class="back-link" href="../../">
+    <img src="../../assets/images/jrplogo.png" alt="JRP logo" width="22" height="22" style="border-radius:8px;vertical-align:middle;object-fit:cover;margin-right:4px;"/> Back to JRP Apps
+  </a>
+  <a aria-label="Email JRP Apps support" href="mailto:support@jrphub.com">Support</a>
+</header>
+<nav aria-label="Breadcrumb" class="breadcrumbs">
+  <ol>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../#apps">Apps</a></li>
+    <li aria-current="page">App Manager</li>
+  </ol>
+</nav>
+<main id="main-content">
+<section class="product-hero">
+  <div class="product-icon">
+    <img src="../../assets/app-icons/appmanager.png" alt="App Manager icon" width="120" height="120"/>
+  </div>
+  <div class="product-copy">
+    <span class="badge" style="background:rgba(249,115,22,0.15);color:#fb923c;border:1px solid rgba(249,115,22,0.3);">Closed Testing on Google Play</span>
+    <h1>App Manager</h1>
+    <p>A clean, transparent, and private Android utility to inspect installed applications, analyze storage breakdown, check permissions, track screen time, and safely export APKs offline.</p>
+    <div class="product-actions">
+      <a class="primary-btn" href="https://play.google.com/apps/testing/com.jrpapps.appmanager" target="_blank" rel="noopener">Join Testing Track ↗</a>
+      <a class="ghost-btn" href="https://play.google.com/store/apps/details?id=com.jrpapps.appmanager" target="_blank" rel="noopener">Google Play Listing ↗</a>
+      <a aria-label="Contact support about App Manager" class="ghost-btn" href="mailto:support@jrphub.com?subject=App%20Manager%20Support">Contact support</a>
+    </div>
+  </div>
+</section>
+<section class="product-grid">
+  <article class="panel">
+    <h2>Overview</h2>
+    <p>Modern smartphones carry hundreds of preinstalled system components, background services, and user applications. Understanding which apps take up storage space, what permissions they have been granted, and how often they are actively used is essential for device health and digital privacy.</p>
+    <p>App Manager was engineered to provide total transparency without demanding root permissions, scraping settings screens, or running background battery-draining monitors. Using official Android APIs, App Manager compiles a rich, structured inventory of all software on your device, complete with package architecture (Single APK vs Split APKs), installation sources, signing certificates, and granular storage measurements.</p>
+    <p>Complement your device toolkit by combining App Manager with <a href="../phonetoolbox/">Phone Toolbox</a> for hardware diagnostics, <a href="../voicemate/">Voice Mate</a> for private offline voice memos, and <a href="../docsstudio/">DocsStudio</a> for local document editing.</p>
+    <h2>Features and Why They Matter</h2>
+    <ul class="feature-list">
+      <li><strong>Comprehensive App Inventory. </strong>Browse all installed applications with instant categorization into User apps and System packages. View version names, internal version codes, install dates, and update timestamps at a glance.</li>
+      <li><strong>Granular Storage Diagnostics. </strong>Inspect accurate byte-level measurements of APK size, app data, cache footprint, and total storage consumption using Android's native storage statistics.</li>
+      <li><strong>Security &amp; Permissions Auditing. </strong>Review every requested and granted permission for any application, highlighting sensitive capabilities such as location, camera, microphone, and contacts.</li>
+      <li><strong>Usage Access &amp; Unused Apps Detection. </strong>Leverage Android's UsageStatsManager to track real screen time across custom timeframes (daily, weekly, monthly) and pinpoint inactive applications cluttering device storage.</li>
+      <li><strong>Smart Groups &amp; Deep Filtering. </strong>Categorize large collections automatically into Communication, Social, Media, Productivity, Finance, Games, and Tools with instant sorting by name, storage size, or update date.</li>
+      <li><strong>Safe Offline APK Sharing. </strong>Inspect signing certificates, package SHA-256 fingerprints, and install sources, then share base APK packages safely via Android's secure sandboxed FileProvider.</li>
+    </ul>
+  </article>
+  <aside class="panel">
+    <h2>Product details</h2>
+    <div class="meta-row"><span>Category</span><strong>Utilities</strong></div>
+    <div class="meta-row"><span>Status</span><strong>Closed Testing on Google Play</strong></div>
+    <div class="meta-row"><span>Availability</span><strong>Google Play &amp; Web</strong></div>
+    <div class="meta-row"><span>Last updated</span><strong>September 2026</strong></div>
+    <div class="meta-row"><span>Android requirement</span><strong>Android 10 to Android 16</strong></div>
+    <div class="meta-row"><span>Developer</span><strong>JRP Apps</strong></div>
+  </aside>
+</section>
+<section class="content-section">
+  <article class="panel">
+    <h2>Who Should Use It</h2>
+    <p>App Manager is crafted for anyone who demands clarity, control, and privacy from their Android device:</p>
+    <ul class="feature-list">
+      <li><strong>Power Users &amp; Tech Enthusiasts: </strong>Inspect package internals, identify split APK configurations, check signing certificate digests, and audit background permissions.</li>
+      <li><strong>Storage Management &amp; Device Hygiene: </strong>Quickly discover heavyweight apps, inspect cache and data ratios, and identify dormant applications that haven't been opened in months.</li>
+      <li><strong>Privacy-Conscious Individuals: </strong>Verify exactly which permissions each installed package possesses, with zero fear of personal telemetry or data leakage.</li>
+      <li><strong>App Testers &amp; Android Developers: </strong>Verify build version codes, target SDKs, install sources, and share test builds with peers effortlessly.</li>
+    </ul>
+  </article>
+  <article class="panel">
+    <h2>Privacy-First Data Handling</h2>
+    <p>Unlike many system utilities that monetize user insights or transmit package catalogs to remote analytics databases, App Manager adheres strictly to a 100% on-device privacy guarantee:</p>
+    <p>The application has zero network tracking, analytics SDKs, or cloud synchronization. The <code>QUERY_ALL_PACKAGES</code> permission and optional <code>PACKAGE_USAGE_STATS</code> permission are queried locally in-memory to build the UI for the active user session and are never transmitted off the device.</p>
+    <p>For complete details on data handling, permissions, and security practices, please review our comprehensive <a href="../../privacy/appmanager.html">App Manager Privacy Policy</a>.</p>
+  </article>
+  <article class="panel">
+    <h2>Fast, Lightweight Android Performance</h2>
+    <p>App Manager is built using modern Kotlin and Flutter architecture with optimized asynchronous native channels. Package queries and storage calculations run on background dispatchers, ensuring silky-smooth 120Hz scrolling, instant filtering, and responsive search across libraries containing over 400 applications.</p>
+    <p>The user interface follows Material Design 3 guidelines with support for dynamic system colors, high-contrast dark mode, and edge-to-edge layouts spanning Android 10 through the latest Android 16.</p>
+  </article>
+  <article class="panel">
+    <h2>Offline Architecture and Web Diagnostics</h2>
+    <p>All core capabilities—app scanning, storage breakdown, permission inspection, usage analysis, and APK sharing—work completely offline without requiring any internet connection. App Manager also features a web diagnostic mode for exploring package metadata structures across desktop and tablet browsers.</p>
+  </article>
+</section>
+<section class="panel faq-panel">
+  <h2>Frequently Asked Questions</h2>
+  <details>
+    <summary>What is App Manager used for?</summary>
+    <p>App Manager is an on-device utility to inspect installed applications, analyze storage breakdown, review permissions, track screen time, and safely share APK packages.</p>
+  </details>
+  <details>
+    <summary>Does App Manager collect or upload my app list?</summary>
+    <p>No. App Manager runs entirely locally. It contains no analytics libraries, no third-party trackers, and never sends your installed app catalog or usage data to any external server.</p>
+  </details>
+  <details>
+    <summary>Why is QUERY_ALL_PACKAGES needed?</summary>
+    <p>On Android 11 (API 30) and above, Android restricts package visibility. App Manager uses this permission strictly on-device to display your installed user and system apps.</p>
+  </details>
+  <details>
+    <summary>Is Usage Access permission required to use the app?</summary>
+    <p>No. Usage Access is entirely optional. It is only required if you wish to view screen time statistics and discover unused applications.</p>
+  </details>
+  <details>
+    <summary>Can App Manager uninstall system apps?</summary>
+    <p>No. Modifying or removing system applications requires root access. App Manager operates within standard Android security boundaries and opens the official Android App Info screen for disabling system apps safely.</p>
+  </details>
+  <details>
+    <summary>How can I join the closed testing track?</summary>
+    <p>Join the closed testing track on Google Play at <a href="https://play.google.com/apps/testing/com.jrpapps.appmanager" target="_blank" rel="noopener">Join Testing Track ↗</a> or join our testers group at <a href="https://groups.google.com/g/jrpapps-testers" target="_blank" rel="noopener">jrpapps-testers@googlegroups.com</a>.</p>
+  </details>
+</section>
+<section class="panel recommendations">
+  <h2>Related Apps and Games</h2>
+  <p>Explore other focused tools in the JRP Apps ecosystem:</p>
+  <div class="recommend-grid">
+    <article class="recommend-card">
+      <img alt="Phone Toolbox app icon" height="64" loading="lazy" src="../../assets/app-icons/phonetoolbox.png" width="64"/>
+      <div class="recommend-info"><strong>Phone Toolbox</strong><small>Hardware sensors and diagnostic tools.</small></div>
+      <a aria-label="View Phone Toolbox app page" class="recommend-button" href="../phonetoolbox/">View App</a>
+    </article>
+    <article class="recommend-card">
+      <img alt="Voice Mate app icon" height="64" loading="lazy" src="../../assets/app-icons/voicemate.png" width="64"/>
+      <div class="recommend-info"><strong>Voice Mate</strong><small>Private offline voice recorder and notes.</small></div>
+      <a aria-label="View Voice Mate app page" class="recommend-button" href="../voicemate/">View App</a>
+    </article>
+    <article class="recommend-card">
+      <img alt="DocsStudio app icon" height="64" loading="lazy" src="../../assets/app-icons/docsstudio.png" width="64"/>
+      <div class="recommend-info"><strong>DocsStudio</strong><small>Document reader and fast text editor.</small></div>
+      <a aria-label="View DocsStudio app page" class="recommend-button" href="../docsstudio/">View App</a>
+    </article>
+    <article class="recommend-card">
+      <img alt="Calculator Pro app icon" height="64" loading="lazy" src="../../assets/app-icons/calculator.png" width="64"/>
+      <div class="recommend-info"><strong>Calculator Pro</strong><small>Everyday arithmetic and scientific math.</small></div>
+      <a aria-label="View Calculator Pro app page" class="recommend-button" href="../calculator/">View App</a>
+    </article>
+  </div>
+</section>
+</main>
+</div>
+<p class="last-updated">Last Updated: September 2026</p>
+<footer class="division-footer">
+<p>© 2026 JRP Apps. <a href="../../">Home</a> · <a href="../../#apps">All apps</a> · <a href="../../#games">All games</a> · <a href="../../#about">About</a> · <a href="../../privacy/appmanager.html">Privacy</a> · <a href="../../sitemap.html">HTML sitemap</a> · <a href="https://play.google.com/store/apps/developer?id=JRP+Apps" rel="noopener" target="_blank">Developer</a> · <a href="mailto:support@jrphub.com">Contact</a> · <a href="https://jrphub.com/">JRP Industries</a></p>
+</footer>
+</body>
+</html>

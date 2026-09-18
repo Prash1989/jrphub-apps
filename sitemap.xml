@@ -12,6 +12,7 @@
   <url><loc>https://apps.jrphub.com/apps/sudoku/</loc><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://apps.jrphub.com/apps/watersort/</loc><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://apps.jrphub.com/apps/voicemate/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://apps.jrphub.com/apps/appmanager/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://apps.jrphub.com/privacy/</loc><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://apps.jrphub.com/privacy/arrowescape.html</loc><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://apps.jrphub.com/privacy/calculatorpro.html</loc><lastmod>2026-09-05</lastmod></url>
@@ -27,6 +28,7 @@
   <url><loc>https://apps.jrphub.com/privacy/sudoku.html</loc><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://apps.jrphub.com/privacy/testerscircle.html</loc><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://apps.jrphub.com/privacy/voicemate.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://apps.jrphub.com/privacy/appmanager.html</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://apps.jrphub.com/privacy/watersort.html</loc><lastmod>2026-09-05</lastmod></url>
   <url>
     <loc>https://apps.jrphub.com/apps/testcircle/</loc>
@@ -61,6 +63,12 @@
   <url>
     <loc>https://apps.jrphub.com/apps/familydocs/</loc>
     <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://apps.jrphub.com/apps/appmanager/</loc>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
