@@ -93,9 +93,9 @@
 <input aria-controls="appGrid" aria-label="Search JRP apps by name or category" autocomplete="off" id="appSearch" placeholder="Search apps or categories..." type="search"/>
 </label>
 <div aria-label="Filter apps" class="filter-chips" role="group">
-<button aria-pressed="true" class="filter active" data-filter="all" type="button">All (15)</button>
+<button aria-pressed="true" class="filter active" data-filter="all" type="button">All (16)</button>
 <button aria-pressed="false" class="filter" data-filter="live" type="button">Live on Play (4)</button>
-<button aria-pressed="false" class="filter" data-filter="testing" type="button">Closed Testing (11)</button>
+<button aria-pressed="false" class="filter" data-filter="testing" type="button">Closed Testing (12)</button>
 <button aria-pressed="false" class="filter" data-filter="utilities" type="button">Utilities</button>
 <button aria-pressed="false" class="filter" data-filter="finance" type="button">Finance</button>
 <button aria-pressed="false" class="filter" data-filter="productivity" type="button">Productivity</button>
@@ -355,6 +355,21 @@
 <a aria-label="Explore App Manager details" class="details-link" href="apps/appmanager/" onclick="event.stopPropagation()">Details →</a>
 </div>
 </article>
+
+<!-- 16. Contacts Pro (Closed Testing) -->
+<article aria-label="Open Contacts Pro details" class="app-card reveal" data-category="utilities productivity testing" data-href="privacy/contactspro.html" data-name="contacts pro contacts plus address book duplicate cleanup manager phone offline private closed testing" role="link" tabindex="0">
+<div class="card-top">
+<div class="app-icon" style="--accent:#2563eb"><img src="assets/app-icons/contactspro.png" alt="Contacts Pro icon" loading="lazy" width="64" height="64"/></div>
+<span class="status testing">Closed Testing</span>
+</div>
+<h3>Contacts Pro</h3>
+<p>Clean up duplicate contacts, organize with smart tags and custom groups, and manage your address book with 100% on-device privacy.</p>
+<div class="card-meta"><span>Utilities</span><span>Closed Testing</span></div>
+<div class="card-actions">
+<a class="play-button" href="https://play.google.com/store/search?q=pub%3AJRP%20Apps&c=apps" target="_blank" rel="noopener" onclick="event.stopPropagation()">Play Store ↗</a>
+<a aria-label="Read Contacts Pro privacy policy" class="details-link" href="privacy/contactspro.html" onclick="event.stopPropagation()">Privacy Policy →</a>
+</div>
+</article>
 </div>
 <p aria-live="polite" class="empty-state" id="emptyState" role="status">No matching apps found.</p>
 </div>
@@ -461,7 +476,7 @@
 </main>
 <p class="last-updated">Last Updated: September 2026</p><footer class="site-footer"><div class="container footer-directory">
 <div><strong>Quick Links</strong><a href="#apps">Featured Android apps</a><a href="#games">Featured puzzle games</a><a href="#latest-updates">Latest product updates</a><a href="sitemap.html">HTML sitemap</a></div>
-<div><strong>Privacy</strong><a href="privacy/">All app privacy policies</a><a href="privacy/batterypro.html">BatteryPro privacy</a><a href="privacy/calculatorpro.html">Calculator Pro privacy</a><a href="privacy/moneymate.html">Money Mate privacy</a><a href="privacy/hdwallpapers.html">HD Wallpapers privacy</a><a href="privacy/appmanager.html">App Manager privacy</a></div>
+<div><strong>Privacy</strong><a href="privacy/">All app privacy policies</a><a href="privacy/contactspro.html">Contacts Pro privacy</a><a href="privacy/batterypro.html">BatteryPro privacy</a><a href="privacy/calculatorpro.html">Calculator Pro privacy</a><a href="privacy/moneymate.html">Money Mate privacy</a><a href="privacy/hdwallpapers.html">HD Wallpapers privacy</a><a href="privacy/appmanager.html">App Manager privacy</a></div>
 <div><strong>Company</strong><a href="#about">About and developer philosophy</a><a href="https://jrphub.com/">JRP Industries</a><a href="https://testcircle.jrphub.com/" rel="noopener" target="_blank">TestCircle Web Portal ↗</a><a href="https://groups.google.com/g/jrpapps-testers" rel="noopener" target="_blank">Testers Google Group (All Apps) ↗</a><a href="https://play.google.com/store/apps/developer?id=JRP+Apps" rel="noopener" target="_blank">JRP Apps on Google Play</a></div>
 <div><strong>Contact</strong><a href="mailto:support@jrphub.com">Developer support</a><a href="#support">Contact JRP Apps</a><span>© <span id="year"></span> JRP Apps.</span></div>
 </div></footer>
